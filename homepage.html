@@ -20,7 +20,7 @@
   <header>
     <div class="contact-callout">
       <div>Lutherville, MD <a class="phone-link" href="tel:667-206-2343">(667) 206-2343</a></div>
-      <a href="#contact" class="form-link">Request a Vascular Consultation</a>
+      <a href="#contact" class="form-link">Request a Vascular <br>Consultation</a>
     </div>
     <img id="vvi-logo" src="./img/logos/vvi-logo.png" alt="Vein &amp; Vascular
         Institute of
@@ -55,17 +55,19 @@
       </article>
     </section>
     <section id="surgery-center">
+        <a href="#" class="center-link">
       <div class="center-description">
         The Vein & Vascular Institute and the Surgery Center of York Road
         are housed
         within the same facility. Click here to learn more about the Surgery
         Center.
       </div>
-      <a href="#" alt="Surgery Center of York Road" class="center-button">
+      <div class="center-button">
         <img id="surgery-logo" src="./img/logos/surgery-logo.png" alt="Surgery
             Center of York
             Road">
-      </a>
+      </div>
+    </a>
     </section>
     <section id="hours-and-location">
       <div class="hours-info">
@@ -98,7 +100,7 @@
       </div>
     </section>
     <section id="contact">
-      <form id="contact-form">
+      <form id="contact-form" name="contact" netlify>
         <fieldset>
           <legend>First Name</legend>
           <label for="first name" class="label-required"><span>First Name</span></label>
@@ -126,9 +128,23 @@
         </fieldset>
         <fieldset class="terms-fields">
           <label for="terms-checkbox" class="terms-container">
-            I accept the Terms of Use
+            I accept the <span class="popover-title popover-wrapper">Terms of Use            <div class="popover-content">
+                <p class="popover-message">
+                    By checking the box on the consultation form, 
+                    you agree to the following Terms of Use: Communications 
+                    through our website or via email are not encrypted and 
+                    are not guaranteed to be secure. Use of the internet or 
+                    email is for your convenience only, and by using them you 
+                    assume the risk of unauthorized use. By checking this box 
+                    you hereby agree to hold Cohesion Health Partners, the Vein 
+                    and Vascular Institute of Central Maryland, the Surgery Center 
+                    of York Road, as well as its physicians, staff, and affiliates 
+                    harmless from any hacking or any other unauthorized use of your 
+                    personal information by outside parties.</p>
+              </div></span>
             <input type="checkbox" required id="terms-checkbox">
             <span class="checkmark"></span>
+
           </label>
         </fieldset>
         <button type="submit">Send Request</button>
@@ -139,6 +155,6 @@
     <img id="cohesion-logo" src="./img/logos/cohesion-logo.png" alt="Cohesion
         Health Partners">
   </footer>
-</body>
 
+</body>
 </html>
