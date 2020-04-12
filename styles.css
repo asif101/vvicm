@@ -106,9 +106,11 @@ section#introduction {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-height: 45vw;
 }
 section#introduction article {
     padding: 2em 15%;
+    /* padding: 2em calc(30vw - 200px); */
 }
 .tagline {
     font-size: 2em;
@@ -122,6 +124,7 @@ section#surgery-center .center-link {
     font-size: 1rem;
     line-height: 1.8;
     text-decoration: none;
+    flex-wrap: wrap;
 }
 section#surgery-center .center-link > * {
     flex: 0 0 50%;
@@ -170,7 +173,9 @@ section#surgery-center .center-link:hover .center-button::after {
 section#hours-and-location {
     display: flex;
     font-size: 1.1rem;
-    padding: 2em 5%;
+    padding: 2em 15%;
+
+    /* padding: 2em calc(30vw - 200px); */
     justify-content: center;
 }
 section#hours-and-location :not(h3) {
@@ -193,6 +198,9 @@ section#hours-and-location  a:hover {
 .hours-info > div {
     margin-bottom: 10px;
 }
+.location-map iframe {
+    width: 50vw;
+}
 /* Contact Section */
 #contact {
     padding: 2em 3em;
@@ -204,6 +212,7 @@ section#hours-and-location  a:hover {
 }
 #contact-form > *:not(button) {
     flex: 1 1 50%;
+    min-width: 200px;
 }
 #contact-form label {
     color: #fff;
@@ -359,5 +368,32 @@ section#hours-and-location  a:hover {
     z-index: 10;
     bottom: calc(100% + 10px);
   }
+  /* ===POPOVER=== */
 
-  
+  @media only screen and (max-width: 980px) {
+    #vvi-logo {
+        margin-bottom: 15px;
+    }
+    .contact-callout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: initial;
+        right: initial;
+    }
+    .contact-callout .form-link {
+        margin: 0 0 0 10px;
+
+    }
+  }
+  @media only screen and (max-width: 780px) {
+    section#surgery-center .center-link > * {
+        flex-basis: 100%;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    nav {
+        display: none;
+    }
+  }
