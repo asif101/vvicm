@@ -42,7 +42,7 @@ header {
     padding: 20px 20px 0;
 }
 #vvi-logo {
-    max-height: 150px;
+    max-height: 100px;
     max-width: calc(100% - 100px);
     display: block;
     margin: 0 auto;
@@ -64,13 +64,20 @@ nav a, nav a:visited {
 .contact-callout {
     text-align: right;
     color: rgb(39, 101, 134) !important;
+    float: right;
 }
-.contact-callout a, .contact-callout a:visited {
+.contact-callout a.phone-link, 
+.contact-callout a.phone-link:visited {
     color: rgb(39, 101, 134) !important;
     text-decoration: none;
 }
-.contact-callout a:hover {
+.contact-callout a.phone-link:hover {
     text-decoration: underline;
+}
+.contact-callout .form-link {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 15px;
 }
 /* ===MAIN=== */
 
@@ -81,7 +88,7 @@ section#introduction {
     line-height: 1.8;
 }
 .hero-image.waiting-room {
-    height: 400px;
+    height: 500px;
     background-image: url(./img/photos/VVI_waitingRoom.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -137,6 +144,7 @@ section#surgery-center > * {
     max-height: 125px;
     position: relative;
     z-index: 3;
+    max-width: 100%;
 }
 
 /* Hours and Location Section */
