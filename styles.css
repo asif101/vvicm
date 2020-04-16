@@ -413,4 +413,20 @@ section#hours-and-location  a:hover {
     nav {
         display: none;
     }
+    #hours-and-location {
+        flex-wrap: wrap;
+        align-items: stretch;
+        flex-direction: column;
+    }
+    .hours-info {
+        flex-wrap: wrap;
+        margin: 0;
+        flex-direction: row;
+    }
+    .hours-info > div {
+        flex: 1 0 50%;
+    }
+    .location-map iframe {
+        width: 100%;
+    }
   }
