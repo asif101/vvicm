@@ -394,7 +394,7 @@ section#hours-and-location  a:hover {
 
     }
     section#introduction article, section#hours-and-location, section#contact {
-        padding: 2em 5%;
+        padding: 1em 5%;
     }
   }
   @media only screen and (max-width: 800px) {
@@ -428,5 +428,9 @@ section#hours-and-location  a:hover {
     }
     .location-map iframe {
         width: 100%;
+    }
+    .tagline {
+        font-size: 1.7em;
+        line-height: 1.5;
     }
   }
