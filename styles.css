@@ -119,32 +119,33 @@ section#introduction article {
     margin-bottom: 20px;
 }
 /* Surgery Center Section */
-section#surgery-center .center-link {
+section#surgery-center .feature-link {
     display: flex;
     font-size: 1rem;
     line-height: 1.8;
     text-decoration: none;
     flex-wrap: wrap;
 }
-section#surgery-center .center-link > * {
-    flex: 0 0 50%;
+section#surgery-center .feature-link > * {
+    flex: 1 0 50%;
     align-items: center;
     display: flex;
     justify-content: center;
     padding: 2em 3em;
+    min-width: 400px;
 }
-.center-link
-.center-description {
+.feature-link
+.feature-description {
     background: rgb(39,93,118);
     color: #fff;
     transition: background .2s;
 }
-.center-button {
+.feature-button {
     background-image: url(./img/blue-triangles.JPG);
     position: relative;
     z-index: 1;
 }
-.center-button::after {
+.feature-button::after {
     content: '';
     background: #fff;
     opacity: .4;
@@ -156,10 +157,10 @@ section#surgery-center .center-link > * {
     z-index: 2;
     transition: opacity .2s;
 }
-section#surgery-center .center-link:hover .center-description {
+section#surgery-center .feature-link:hover .feature-description {
     background: rgba(39,93,118, .9);
 }
-section#surgery-center .center-link:hover .center-button::after {
+section#surgery-center .feature-link:hover .feature-button::after {
     opacity: .6;
 }
 #surgery-logo {
@@ -371,8 +372,14 @@ section#hours-and-location  a:hover {
   /* ===POPOVER=== */
 
   @media only screen and (max-width: 980px) {
+    nav {
+        display: none;
+    }
     #vvi-logo {
         margin-bottom: 15px;
+    }
+    .hero-image {
+        margin-top: 15px;
     }
     .contact-callout {
         display: flex;
@@ -386,11 +393,21 @@ section#hours-and-location  a:hover {
         margin: 0 0 0 10px;
 
     }
+    section#introduction article, section#hours-and-location, section#contact {
+        padding: 2em 5%;
+    }
   }
-  @media only screen and (max-width: 780px) {
+  @media only screen and (max-width: 800px) {
     section#surgery-center .center-link > * {
         flex-basis: 100%;
     }
+    .feature-button {
+        padding: 1.1em 3em !important;
+    }
+    #surgery-logo {
+        max-height: 75px;
+    }
+
   }
   @media only screen and (max-width: 500px) {
     nav {
