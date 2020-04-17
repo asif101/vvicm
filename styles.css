@@ -6,7 +6,7 @@ html, body {
     font-size: 16px; 
 }
 body {
-    background: #FFFAFA;
+    /* background: #FFFAFA; */
     /* max-width: 1440px; */
     margin: 0 auto;
     font-family: 'Lato', sans-serif;
@@ -101,7 +101,7 @@ section#introduction {
     line-height: 1.8;
 }
 .hero-image.waiting-room {
-    height: 500px;
+    height: 400px;
     background-image: url(./img/photos/VVI_waitingRoom.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -164,7 +164,7 @@ section#surgery-center .feature-link:hover .feature-button::after {
     opacity: .6;
 }
 #surgery-logo {
-    max-height: 125px;
+    max-height: 90px;
     position: relative;
     z-index: 3;
     max-width: 100%;
@@ -174,7 +174,7 @@ section#surgery-center .feature-link:hover .feature-button::after {
 section#hours-and-location {
     display: flex;
     font-size: 1.1rem;
-    padding: 2em 15%;
+    padding: 2em 10%;
 
     /* padding: 2em calc(30vw - 200px); */
     justify-content: center;
@@ -190,7 +190,7 @@ section#hours-and-location  a:hover {
     text-decoration: underline;
 }
 .hours-info {
-    margin-right: 50px;
+    margin-right: 30px;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -200,7 +200,7 @@ section#hours-and-location  a:hover {
     margin-bottom: 10px;
 }
 .location-map iframe {
-    width: 50vw;
+    width: 55vw;
 }
 /* Contact Section */
 #contact {
@@ -272,7 +272,7 @@ section#hours-and-location  a:hover {
 }
 /* ===FOOTER=== */
 #cohesion-logo {
-    max-height: 150px;
+    max-height: 115px;
     display: block;
     margin: 0 auto;
     padding: 20px;
