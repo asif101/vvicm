@@ -1,4 +1,5 @@
 /* ===GLOBAL=== */
+nav {display: none !important;}
 * {
     box-sizing: border-box;
 }
