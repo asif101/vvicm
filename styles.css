@@ -3,6 +3,9 @@ nav {display: none !important;}
 * {
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 html, body {
     font-size: 16px; 
 }
