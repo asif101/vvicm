@@ -1,4 +1,4 @@
-function scrollTo(el) {
+function scrollToSection(el) {
 	target = document.getElementById(el)
 	target.scrollIntoView({
 		behavior: "smooth"
