@@ -1,4 +1,7 @@
 /* ===GLOBAL=== */
+[hidden] {
+    display: none !important;
+}
 nav {display: none !important;}
 * {
     box-sizing: border-box;
@@ -106,7 +109,7 @@ section#introduction {
 }
 .hero-image.waiting-room {
     height: 450px;
-    background-image: url(./img/photos/VVI_waitingRoom.jpg);
+    background-image: url(../img/photos/VVI_waitingRoom.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -145,7 +148,7 @@ section#surgery-center .feature-link > * {
     transition: background .2s;
 }
 .feature-button {
-    background-image: url(./img/blue-triangles.JPG);
+    background-image: url(../img/blue-triangles.JPG);
     position: relative;
     z-index: 1;
 }
@@ -523,3 +526,223 @@ section#hours-and-location  a:hover {
         line-height: 1.5;
     }
   }
+  
+
+
+  /* ===LASER CENTER=== */
+  /* Intro */
+  .laser__intro-section {
+    display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 0px;
+    position: relative;
+    font-size: 1.12em;
+    color: #fff;
+    line-height: 1.5em;
+
+  }
+  .laser__intro-title {
+      grid-column-start: 1;
+      grid-row-start: 1;
+      font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.1em;
+    font-weight: bold;
+    color: rgb(39, 101, 134);
+    align-self: end;
+    padding: 20px 20px 0px 75px;
+    line-height: 1.5;
+
+  }
+    .laser__intro-tagline {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        font-size: 2em;
+        font-style: italic;
+        color: rgb(39, 101, 134);
+        padding: 0px 20px 30px 75px;
+        line-height: 1.5;
+
+
+    }
+    .laser__intro-p1 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+        padding: 60px 20px 30px 75px;
+
+    }
+    .laser__intro-p2 {
+        grid-column-start: 1;
+        grid-row-start: 4;
+        padding: 0px 20px 30px 75px;
+
+    }
+    .laser__intro-btn {
+        grid-column-start: 1;
+        grid-row-start: 5;
+        justify-self: start;
+        align-self: center;
+        margin: 0px 20px 60px 75px;
+        background-color: rgba(255,255,255,.2);
+        border: 1px solid rgba(255,255,255,.6);
+        color: #fff;
+        cursor: pointer;
+        padding: 10px 30px;
+    }
+    .laser__intro-btn:hover {
+        background-color: rgba(255,255,255,.4);
+    }
+    .laser__intro-pic {
+        grid-column-start: 2;
+        grid-row-start: 1;
+        grid-row-end: span 5;
+        background-image: url(../img/photos/lucas-cropped2.png);
+        background-position: top center;
+        background-size: cover;
+    }
+    .laser__intro-background {
+        background: rgb(39, 101, 134);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        grid-row: 3 / span 3;
+        grid-column: 1;
+        z-index: -1;
+    }
+
+    /* Treatments */
+    .laser__treatments-section {
+        background-color: rgba(64, 153, 194, .1);
+        padding: 60px 75px;
+    }
+    .laser__treatments-header {
+        font-size: 2em;
+        color: rgb(39, 101, 134);
+        font-weight: bold;
+    }
+    .laser__treatments-body {
+
+    }
+    [role="tablist"] {
+        padding: 0;
+        border-bottom: 4px solid #1E485C;
+      }
+      
+      [role="tablist"] li, [role="tablist"] a {
+        display: inline-block;
+        color: #1E485C;
+      }
+  
+      [role="tablist"] a {
+        text-decoration: none;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1.75em;
+        padding: 25px 25px 15px;
+        min-width: 366px;
+      }
+      [role="tablist"] [aria-selected] {
+        background: #1E485C;
+        position: relative;
+        color: #fff;
+        font-weight: bold;
+      }
+     /* Treatment Cards */
+     .treatmeant-cards__container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         outline: none;
+     }
+     .treatmeant-cards__container > div {
+         flex: 0 0 50%;
+         flex-basis: calc(50% - .8em);
+     }
+     .treatmeant-card {
+         background-color: #fff;
+         box-shadow: 0px 2px 4px 0px rgba(179, 184, 200, .5);
+         display: flex;
+         flex-direction: column;
+         margin-bottom: 1.6em;
+         padding: 30px 35px;
+         transition: all .3s;
+         position: relative;
+     }
+     .treatmeant-card:last-child {
+         flex-basis: 100%;
+     }
+     .treatmeant-card:hover {
+        box-shadow: 0px 3px 6px 1px rgba(179, 184, 200, .5), 0px 4px 8px 3px rgba(179, 184, 200, .3);
+     }
+     .treatmeant-card::after {
+         content: '';
+         position: absolute;
+         left: 50%;
+         right: 50%;
+         bottom: 0;
+         height: 4px;
+         background-color: #1E485C;
+         transition: all .3s;
+     }
+     .treatmeant-card:hover::after {
+         left: 0;
+         right: 0;
+     }
+     .treatment-card__header {
+         display: flex;
+         color: #276586;
+         justify-content: space-between;
+         align-items: flex-start;
+     }
+     .treatment-card__title {
+         font-weight: bold;
+         font-size: 1.75em;
+         line-height: 1.7;
+     }
+     .treatment-card__tagline {
+         font-style: italic;
+         font-size: 1.375em;
+     }
+     .treatmeant-card__body {
+         font-size: 1.12em;
+         padding-top: 8px;
+         flex-grow: 1;
+     }
+     .treatmeant-card__body ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+     }
+     .treatmeant-card__body ul.single {
+        columns: 1;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+     }
+     .treatmeant-card__subheading {
+         font-weight: bold;
+         color: #276586;
+         font-size: 1.125em;
+     }
+     .treatmeant-card__action {
+         align-self: flex-end;
+         position: relative;
+         color: #276586;
+         text-decoration: none;
+         margin-right: 12px;
+     }
+     .treatmeant-card__action::after {
+         content: '\f105';
+         position: absolute;
+         left: calc(100% + 5px);
+         font-family: "Font Awesome 5 Free";
+         font-weight: 900;
+
+     }
+     .treatmeant-card__halo-row {
+         display: flex;
+     }
+     .treatmeant-card__halo-row > div {
+         flex-grow: 1;
+         padding-right: 15px;
+     }
+
+
