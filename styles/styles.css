@@ -812,7 +812,7 @@ section#hours-and-location  a:hover {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        align-items: stretch;
+        /* align-items: stretch; */
     }
     .treatmeant-card__visia-bottom > * {
         flex: 0 0 49%
@@ -844,7 +844,19 @@ section#hours-and-location  a:hover {
         .treatmeant-cards__container > div {
             flex: 1 0 100%;
         }
-
+        .treatmeant-card__visia-bottom {
+            flex-direction: column;
+            align-items: center;
+        }
+        .treatmeant-card__visia-bottom > * {
+            flex: unset;
+            /* flex: 0 0 49%; */
+        }
+        .treatmeant-card__visia-bottom video {
+            margin-bottom: 15px;
+            width: 100% !important;
+            height: auto !important;
+        }
     
       }
 
