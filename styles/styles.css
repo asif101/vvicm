@@ -542,7 +542,31 @@ section#hours-and-location  a:hover {
     font-size: 1.12em;
     color: #fff;
     line-height: 1.5em;
+    position: relative;
 
+  }
+  .laser__jump-link {
+      position: absolute;
+      background-color: #1E485C;
+      color: #fff !important;
+      font-weight: bold;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
+      height: 46px;
+      width: 46px;
+      top: calc(100% - 23px);
+      left: calc(50% - 23px);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none !important;
+      font-size: 1.3em;
+      animation: .6s ease-out 0s 1 slideInFromBottom;
+      transition: box-shadow .3s;
+  }
+  .laser__jump-link:hover {
+        box-shadow: none;
   }
   .laser__intro-title {
       grid-column-start: 1;
@@ -859,4 +883,15 @@ section#hours-and-location  a:hover {
         }
     
       }
+/* ===ANIMATIONS=== */
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
