@@ -1,12 +1,12 @@
 (function() {
 	// Get relevant elements and collections
-	const tabbed = document.querySelector('.tabbed');
-	const tablist = tabbed.querySelector('ul');
-	const tabs = tablist.querySelectorAll('a');
-	const panels = tabbed.querySelectorAll('[id^="lsection"]');
+	var tabbed = document.querySelector('.tabbed');
+	var tablist = tabbed.querySelector('ul');
+	var tabs = tablist.querySelectorAll('a');
+	var panels = tabbed.querySelectorAll('[id^="lsection"]');
 	
 	// The tab switching function
-	const switchTab = (oldTab, newTab) => {
+	var switchTab = (oldTab, newTab) => {
 	  newTab.focus();
 	  // Make the active tab focusable by the user (Tab key)
 	  newTab.removeAttribute('tabindex');
@@ -16,8 +16,8 @@
 	  oldTab.setAttribute('tabindex', '-1');
 	  // Get the indices of the new and old tabs to find the correct
 	  // tab panels to show and hide
-	  let index = Array.prototype.indexOf.call(tabs, newTab);
-	  let oldIndex = Array.prototype.indexOf.call(tabs, oldTab);
+	  var index = Array.prototype.indexOf.call(tabs, newTab);
+	  var oldIndex = Array.prototype.indexOf.call(tabs, oldTab);
 	  panels[oldIndex].hidden = true;
 	  panels[index].hidden = false;
 	}
@@ -35,7 +35,7 @@
 	  // Handle clicking of tabs for mouse users
 	  tab.addEventListener('click', e => {
 		e.preventDefault();
-		let currentTab = tablist.querySelector('[aria-selected]');
+		var currentTab = tablist.querySelector('[aria-selected]');
 		if (e.currentTarget !== currentTab) {
 		  switchTab(currentTab, e.currentTarget);
 		}
@@ -44,10 +44,10 @@
 	  // Handle keydown events for keyboard users
 	  tab.addEventListener('keydown', e => {
 		// Get the index of the current tab in the tabs node list
-		let index = Array.prototype.indexOf.call(tabs, e.currentTarget);
+		var index = Array.prototype.indexOf.call(tabs, e.currentTarget);
 		// Work out which key the user is pressing and
 		// Calculate the new tab's index where appropriate
-		let dir = e.which === 37 ? index - 1 : e.which === 39 ? index + 1 : e.which === 40 ? 'down' : null;
+		var dir = e.which === 37 ? index - 1 : e.which === 39 ? index + 1 : e.which === 40 ? 'down' : null;
 		if (dir !== null) {
 		  e.preventDefault();
 		  // If the down key is pressed, move focus to the open panel,
@@ -61,7 +61,7 @@
 	Array.prototype.forEach.call(panels, (panel, i) => {
 	  panel.setAttribute('role', 'tabpanel');
 	  panel.setAttribute('tabindex', '-1');
-	  let id = panel.getAttribute('id');
+	  var id = panel.getAttribute('id');
 	  panel.setAttribute('aria-labelledby', tabs[i].id);
 	  panel.hidden = true; 
 	});
@@ -82,24 +82,24 @@ function scrollToSection(el) {
 
 //Dismiss alert banner
 function dismissAlert() {
-	let alert = document.getElementById('covid-alert');
+	var alert = document.getElementById('covid-alert');
 	alert.style.display = 'none';
   }
   
   //Show statement modal
   function showStatement() {
-	let statement = document.getElementById('statement-modal');
+	var statement = document.getElementById('statement-modal');
 	statement.classList.remove("closed");
   }
   function closeStatement() {
-	let statement = document.getElementById('statement-modal');
+	var statement = document.getElementById('statement-modal');
 	statement.classList.add("closed");
   }
   
   //Dismiss modal when clicking outside content
-  let statementContainer = document.getElementById('statement-modal');
-  let statementContent = document.getElementById('statement-content');
-  let learnMoreButton = document.getElementById('covid-button');
+  var statementContainer = document.getElementById('statement-modal');
+  var statementContent = document.getElementById('statement-content');
+  var learnMoreButton = document.getElementById('covid-button');
   window.onclick = function(event) {
 	if ((event.target != statementContent) && (event.target != learnMoreButton)) {
 	  statementContainer.classList.add("closed");
