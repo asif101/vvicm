@@ -40,9 +40,16 @@ fieldset legend {
     display: none;
 }
 main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
 }
 section {
     outline: none;
@@ -132,17 +139,28 @@ section#introduction article {
 }
 /* Surgery Center Section */
 section#surgery-center .feature-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 1rem;
     line-height: 1.8;
     text-decoration: none;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 section#surgery-center .feature-link > * {
-    flex: 1 0 50%;
-    align-items: center;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 50%;
+            flex: 1 0 50%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 2em 3em;
     min-width: 400px;
 }
@@ -184,12 +202,16 @@ section#surgery-center .feature-link:hover .feature-button::after {
 
 /* Hours and Location Section */
 section#hours-and-location {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 1.1rem;
     padding: 2em 10%;
 
     /* padding: 2em calc(30vw - 200px); */
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 section#hours-and-location :not(h3) {
     color: rgb(39, 101, 134) !important;
@@ -204,9 +226,16 @@ section#hours-and-location  a:hover {
 .hours-info {
     margin-right: 30px;
     line-height: 1.6;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .hours-info > div {
     margin-bottom: 10px;
@@ -220,11 +249,16 @@ section#hours-and-location  a:hover {
     background: rgb(39,93,118);
 }
 #contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 #contact-form > *:not(button) {
-    flex: 1 1 50%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
     min-width: 200px;
 }
 #contact-form label {
@@ -266,6 +300,7 @@ section#hours-and-location  a:hover {
     font-size: 1.3em;
 }
 #contact-form fieldset.reason-fields, #contact-form fieldset.terms-fields {
+    -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
 }
 #contact-form fieldset.terms-fields > * {
