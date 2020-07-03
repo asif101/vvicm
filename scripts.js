@@ -73,6 +73,8 @@
   })();
 
 function scrollToSection(el) {
+	var check = document.getElementById('burger');
+	check.checked = false;
 	target = document.getElementById(el)
 	target.scrollIntoView({
 		behavior: "smooth"
