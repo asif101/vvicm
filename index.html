@@ -17,8 +17,8 @@
   <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
@@ -31,19 +31,34 @@
     <button id="alert-dismiss" title="Dismiss Alert" onclick="dismissAlert()"><i class="fas fa-times"></i></button>
   </div>
   <header>
+    
     <img id="vvi-logo" src="./img/logos/vvi-logo.png" alt="Vein &amp; Vascular
         Institute of
         Central Maryland">
-        <div class="contact-callout">
-            <div>Lutherville, MD <a class="phone-link" href="tel:667-206-2343">(667) 206-2343</a></div>
-            <a href="#contact" class="form-link" onclick="scrollToSection('contact')">Request a Vascular <br>Consultation</a>
+        <div class="nav-container">
+          <input id="burger" type="checkbox" />
+          <label for="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+          </label>
+          <div class="nav-wrapper">
+            <img id="vvi-logo" src="./img/logos/vvi-logo.png" alt="Vein &amp; Vascular
+            Institute of
+            Central Maryland">
+            <div class="contact-callout">
+              <div>Lutherville, MD <a class="phone-link" href="tel:667-206-2343">(667) 206-2343</a></div>
+              <a href="#contact" class="form-link" onclick="scrollToSection('contact')">Request a Vascular <br>Consultation</a>
+            </div>
+      <nav>
+        <a href="./index.html">VVICM Home</a>
+        <a href="./pages/laser-center.html">Cosmetic Laser Center</a>
+        <a href="https://www.surgerycenterofyorkroad.com/">Surgery Center</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
           </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Meet the Team</a>
-      <a href="#">Cosmetic Laser Center</a>
-      <a href="#">Contact</a>
-    </nav>
+
+  </div>
   </header>
   <main>
     <section id="introduction">
