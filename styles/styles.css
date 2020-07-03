@@ -991,6 +991,7 @@ section#hours-and-location  a:hover {
     }
     .treatmeant-header__icon {
         max-height: 75px;
+        max-width: 175px;
     }
     .treatmeant-card__body {
         font-size: 1.12em;
