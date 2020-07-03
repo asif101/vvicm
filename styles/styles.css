@@ -1177,6 +1177,21 @@ section#hours-and-location  a:hover {
             }
 
           }
+          @media only screen and (max-width: 600px) {
+            .laser__intro-p1, .laser__intro-p2 {
+                padding: 20px 25px 0px;
+            }
+            .laser__intro-btn {
+                margin: 20px 25px 25px;
+            }
+            .treatmeant-card {
+                padding: 15px 20px;
+            }
+            [role="tablist"] {
+                display: flex;
+            }
+
+          }
 /* ===ANIMATIONS=== */
 @keyframes slideInFromBottom {
     0% {
