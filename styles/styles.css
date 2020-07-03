@@ -654,6 +654,7 @@ section#hours-and-location  a:hover {
   .laser__intro-title {
     -ms-grid-column: 1;
         grid-column-start: 1;
+        grid-column-end: 7;
     -ms-grid-row: 1;
         grid-row-start: 1;
     font-family: 'Roboto Condensed', sans-serif;
@@ -724,6 +725,7 @@ section#hours-and-location  a:hover {
     background-image: url(../img/photos/lucas.png);
     background-position: top center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .laser__intro-background {
     background: rgb(39, 101, 134);
@@ -941,6 +943,7 @@ section#hours-and-location  a:hover {
         background-color: #276586;
         padding: 20px 30px;
         margin-left: 30px;
+        max-height: 300px;
         -webkit-box-flex: 1;
             -ms-flex: 1 0 400px;
                 flex: 1 0 400px;
@@ -1057,10 +1060,114 @@ section#hours-and-location  a:hover {
         }
     
       }
+      @media only screen and (max-width: 1175px) {
+        .laser__intro-section {
+            -ms-grid-columns: auto 480px;
+            grid-template-columns: auto 480px;
+        }
+        .laser__intro-p1 {
+            padding: 30px 20px 15px 40px;
+        }
+        .laser__intro-p2 {
+            padding: 0px 20px 15px 40px;
+        }
+        .laser__intro-btn {
+            margin: 0px 20px 30px 40px;
+        }
+        .laser__intro-title {
+            padding: 20px 20px 0px 40px;
+            font-size: 2.8em;
+        }
+        .laser__intro-tagline {
+            padding: 0px 20px 30px 40px;
+            font-size: 1.8em;
+        }
+      }
+      @media only screen and (max-width: 980px) {
+        .laser__intro-section {
+            -ms-grid-columns: auto 350px;
+            grid-template-columns: auto 350px;
+        }          
+        .laser__intro-pic {
+            background-position: bottom center;
+            background-size: 100% auto;
+        }
+        .laser__treatments-section {
+            padding: 3em 5% !important;
+        }
+        [role="tablist"] a {
+            min-width: 0px;
+        }
+        .treatmeant-card__visia-top {
+            flex-direction: column;
+        }
+        .treatment-card__visia-right {
+            margin: 10px 0px 0px;
+            flex: 0;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        .treatmeant-card__halo-row img {
+            display: none;
+        }
+      }
+
+      @media only screen and (max-width: 900px) {
+        .treatmeant-card__halo-row img {
+            display: none;
+        }
+        .laser__intro-section {
+            grid-template-columns: auto;
+        }
+        .laser__intro-pic {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 3px;
+            right: 19px;
+            border-radius: 50%;
+            border: 5px solid rgb(39, 101, 134);
+            background: #fff;
+        }
+        .laser__intro-pic::after {
+            content: '';
+            position: absolute;
+            background: #fff;
+            top:0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            background-image: url(../img/photos/lucas.png);
+            background-position: 71% -4%;
+            background-size: 140%;
+            background-repeat: no-repeat;
+        }
+        .laser__intro-p1 {
+            padding-top: 50px;
+        }
+        .laser__intro-title, .laser__intro-tagline {
+            max-width: calc(100% - 215px);
+            line-height: 1.2;
+            text-align: center;
+        }
+        .treatmeant-card__halo-row {
+            flex-direction: column;
+        }
+    }
+        @media only screen and (max-width: 825px) {
+            .laser__intro-pic {
+                display: none;
+            }
+            .laser__intro-title, .laser__intro-tagline {
+                max-width: 100%;
+            }
+
+          }
 /* ===ANIMATIONS=== */
 @keyframes slideInFromBottom {
     0% {
-      transform: translateY(-100px);
+      transform: translateY(100px);
       opacity: 0;
     }
     100% {
