@@ -1190,7 +1190,18 @@ section#hours-and-location  a:hover {
             [role="tablist"] {
                 display: flex;
             }
-
+            .laser__jump-link {
+                display: none !important;
+            }
+            .contact-callout a.phone-link, .contact-callout a.phone-link:visited {
+                display: block;
+            }
+            #alert-dismiss {
+                top: calc(50% - 15px);
+            }
+            #covid-button {
+                margin-top: 5px;
+            }
           }
 /* ===ANIMATIONS=== */
 @keyframes slideInFromBottom {
