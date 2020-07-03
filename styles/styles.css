@@ -1113,6 +1113,12 @@ section#hours-and-location  a:hover {
       }
 
       @media only screen and (max-width: 900px) {
+        #vvi-logo {
+            max-width: 325px;
+        }
+        .contact-callout {
+            justify-content: space-between;
+        }
         .treatmeant-card__halo-row img {
             display: none;
         }
@@ -1153,6 +1159,13 @@ section#hours-and-location  a:hover {
         }
         .treatmeant-card__halo-row {
             flex-direction: column;
+        }
+        .laser__intro-btn {
+            margin-bottom: 50px;
+        }
+        [role="tablist"] a {
+            padding: 15px 15px 10px;
+            font-size: 1.4em;
         }
     }
         @media only screen and (max-width: 825px) {
