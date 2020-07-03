@@ -1202,6 +1202,9 @@ section#hours-and-location  a:hover {
             #covid-button {
                 margin-top: 5px;
             }
+            .treatment-card__title {
+                line-height: 1.2;
+            }
           }
 /* ===ANIMATIONS=== */
 @keyframes slideInFromBottom {
