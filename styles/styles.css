@@ -800,6 +800,7 @@ section#hours-and-location  a:hover {
       align-self: end;
   padding: 20px 20px 0px 75px;
   line-height: 1.5;
+  margin-bottom: 15px;
 
 }
 .laser__intro-tagline {
@@ -812,6 +813,7 @@ section#hours-and-location  a:hover {
     color: rgb(39, 101, 134);
     padding: 0px 20px 30px 75px;
     line-height: 1.5;
+    display: none !important;
 
 
 }
