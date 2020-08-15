@@ -1068,11 +1068,7 @@ label[for="burger"] {
 }
 
 .treatmeant-cards__container>div {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    -ms-flex-preferred-size: calc(50% - .8em);
-    flex-basis: calc(50% - .8em);
+    width: calc(50% - 0.8em);
 }
 
 .treatmeant-card {
