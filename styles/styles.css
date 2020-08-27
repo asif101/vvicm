@@ -817,81 +817,105 @@ label[for="burger"] {
 /* ===LASER CENTER=== */
 /* Intro */
 .laser__intro-section {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 6fr 0px 4fr;
-    grid-template-columns: 6fr 4fr;
-    -ms-grid-rows: auto 0px auto 0px auto 0px auto 0px auto;
-    grid-template-rows: auto auto auto auto auto;
-    gap: 0px;
-    position: relative;
+    /* background-color: yellowgreen; */
+    width: 100%;
+    height: 564px;
+    display: flex;
     font-size: 1.12em;
     color: #fff;
     line-height: 1.5em;
     position: relative;
+}
+
+.laser__intro-left {
+    z-index: 2;
+    width: 71.4%;
+    height: 100%;
+    flex-grow: 0.8;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+}
+
+.laser__intro-title-container {
+    height: 33%;
+}
+
+
+.laser__intro-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.45rem;
+    font-weight: bold;
+    color: rgb(39, 101, 134);
+    align-self: end;
+    padding: 20px 20px 0px 75px;
+    line-height: 1.5;
 
 }
 
-/* IE Grid Fallbacks */
-.laser__intro-section>*:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
+.laser__intro-tagline {
+    font-size: 2.2rem;
+    font-style: italic;
+    color: rgb(39, 101, 134);
+    padding: 0px 20px 30px 75px;
+    line-height: 1.5;
+}
+
+.laser__intro-body-container {
+    height: 67%;
+}
+
+.laser__intro-p1 {
+    padding: 60px 20px 30px 75px;
 
 }
 
-.laser__intro-section>*:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
+.laser__intro-p2 {
+    padding: 0px 20px 30px 75px;
 
 }
 
-.laser__intro-section>*:nth-child(3) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-
+.laser__intro-btn {
+    justify-self: start;
+    align-self: center;
+    margin: 0px 20px 60px 75px;
+    background-color: rgba(255, 255, 255, .2);
+    border: 1px solid rgba(255, 255, 255, .6);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 30px;
 }
 
-.laser__intro-section>*:nth-child(4) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-
+.laser__intro-btn:hover {
+    background-color: rgba(255, 255, 255, .4);
 }
 
-.laser__intro-section>*:nth-child(5) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-
+.laser__intro-right {
+    z-index: 2;
+    width: 28.6%;
+    height: 100%;
+    display: flex;
+    /* background-color: orangered; */
 }
 
-.laser__intro-section>*:nth-child(6) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 3;
-
+.laser__intro-pic {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/photos/lucas.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.laser__intro-section>*:nth-child(7) {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-
+.laser__intro-background {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 67%;
+    background: rgb(39, 101, 134);
 }
 
-.laser__intro-section>*:nth-child(8) {
-    -ms-grid-row: 7;
-    -ms-grid-column: 3;
-
-}
-
-.laser__intro-section>*:nth-child(9) {
-    -ms-grid-row: 9;
-    -ms-grid-column: 1;
-
-}
-
-.laser__intro-section>*:nth-child(10) {
-    -ms-grid-row: 9;
-    -ms-grid-column: 3;
-
-}
 
 .laser__jump-link {
     position: absolute;
@@ -916,102 +940,6 @@ label[for="burger"] {
 
 .laser__jump-link:hover {
     box-shadow: none;
-}
-
-.laser__intro-title {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    grid-column-end: 7;
-    -ms-grid-row: 1;
-    grid-row-start: 1;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 3.1em;
-    font-weight: bold;
-    color: rgb(39, 101, 134);
-    -ms-grid-row-align: end;
-    align-self: end;
-    padding: 20px 20px 0px 75px;
-    line-height: 1.5;
-
-}
-
-.laser__intro-tagline {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-row: 2;
-    grid-row-start: 2;
-    font-size: 2em;
-    font-style: italic;
-    color: rgb(39, 101, 134);
-    padding: 0px 20px 30px 75px;
-    line-height: 1.5;
-
-
-}
-
-.laser__intro-p1 {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-row: 3;
-    grid-row-start: 3;
-    padding: 60px 20px 30px 75px;
-
-}
-
-.laser__intro-p2 {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-row: 4;
-    grid-row-start: 4;
-    padding: 0px 20px 30px 75px;
-
-}
-
-.laser__intro-btn {
-    -ms-grid-column: 1;
-    grid-column-start: 1;
-    -ms-grid-row: 5;
-    grid-row-start: 5;
-    -ms-grid-column-align: start;
-    justify-self: start;
-    -ms-grid-row-align: center;
-    align-self: center;
-    margin: 0px 20px 60px 75px;
-    background-color: rgba(255, 255, 255, .2);
-    border: 1px solid rgba(255, 255, 255, .6);
-    color: #fff;
-    cursor: pointer;
-    padding: 10px 30px;
-}
-
-.laser__intro-btn:hover {
-    background-color: rgba(255, 255, 255, .4);
-}
-
-.laser__intro-pic {
-    -ms-grid-column: 2;
-    grid-column-start: 2;
-    -ms-grid-row: 1;
-    grid-row-start: 1;
-    -ms-grid-row-span: 5;
-    grid-row-end: span 5;
-    background-image: url(../img/photos/lucas.png);
-    background-position: top center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.laser__intro-background {
-    background: rgb(39, 101, 134);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 3;
-    grid-row: 3 / span 3;
-    -ms-grid-column: 1;
-    grid-column: 1;
-    z-index: -1;
 }
 
 /* Treatments */
