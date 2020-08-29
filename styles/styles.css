@@ -844,7 +844,6 @@ label[for="burger"] {
     font-size: 3.45rem;
     font-weight: bold;
     color: rgb(39, 101, 134);
-    align-self: end;
     padding: 20px 20px 0px 75px;
     line-height: 1.5;
 
@@ -979,27 +978,32 @@ label[for="burger"] {
     }
 
     .laser__intro-title {
-        font-size: 4.8vw;
+        word-wrap: none;
+        white-space: nowrap;
     }
 
     .laser__intro-tagline {
-        font-size: 3.1vw;
+        word-wrap: none;
+        white-space: nowrap;
     }
 }
 
+
 @media only screen and (max-width: 980px) {
-    .laser__intro-section {}
+    .laser__intro-section {
+        height: 600px;
+    }
 
     .laser__intro-title-container {
-        height: 25%;
+        height: 30%;
     }
 
     .laser__intro-body-container {
-        height: 75%
+        height: 70%
     }
 
     .laser__intro-background {
-        height: 75%;
+        height: 70%;
     }
 
     .laser__intro-pic {
@@ -1008,11 +1012,51 @@ label[for="burger"] {
     }
 }
 
-
 @media only screen and (max-width: 900px) {
 
     .laser__intro-section {
-        grid-template-columns: auto;
+        height: 502px;
+    }
+
+    .laser__intro-left {
+        width: 100%;
+    }
+
+    .laser__intro-title-container {
+        width: calc(100% - 200px);
+        height: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .laser__intro-title {
+        font-size: 3rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .laser__intro-tagline {
+        font-size: 1.9rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .laser__intro-body-container {
+        height: 67%
+    }
+
+    .laser__intro-right {
+        width: 0px;
+    }
+
+    .laser__intro-p1 {
+        padding: 40px 20px 30px 35px;
+    }
+
+    .laser__intro-background {
+        height: 67%;
     }
 
     .laser__intro-pic {
@@ -1039,30 +1083,6 @@ label[for="burger"] {
         background-position: 71% -4%;
         background-size: 140%;
         background-repeat: no-repeat;
-    }
-
-    .laser__intro-p1 {
-        padding-top: 50px;
-    }
-
-    .laser__intro-title,
-    .laser__intro-tagline {
-        max-width: calc(100% - 215px);
-        line-height: 1.2;
-        text-align: center;
-    }
-
-    .treatmeant-card__halo-row {
-        flex-direction: column;
-    }
-
-    .laser__intro-btn {
-        margin-bottom: 50px;
-    }
-
-    [role="tablist"] a {
-        padding: 15px 15px 10px;
-        font-size: 1.4em;
     }
 }
 
