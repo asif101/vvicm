@@ -913,6 +913,7 @@ label[for="burger"] {
 
 
 .laser__jump-link {
+    z-index: 3;
     position: absolute;
     background-color: #1E485C;
     color: #fff !important;
@@ -1035,12 +1036,14 @@ label[for="burger"] {
         font-size: 3rem;
         line-height: 1.2;
         text-align: center;
+        padding-left: 0;
     }
 
     .laser__intro-tagline {
         font-size: 1.9rem;
         line-height: 1.2;
         text-align: center;
+        padding-left: 0;
     }
 
     .laser__intro-body-container {
@@ -1071,6 +1074,7 @@ label[for="burger"] {
     }
 
     .laser__intro-pic::after {
+        z-index: 3;
         content: '';
         position: absolute;
         background: #fff;
@@ -1086,69 +1090,43 @@ label[for="burger"] {
     }
 }
 
-/* 
+
 @media only screen and (max-width: 825px) {
+
+    .laser__intro-section {
+        height: auto;
+    }
+
     .laser__intro-pic {
         display: none;
     }
 
-    .laser__intro-title,
+    .laser__intro-title-container {
+        width: 100%;
+    }
+
+
+    .laser__intro-title {
+        word-wrap: unset;
+        white-space: unset;
+    }
+
     .laser__intro-tagline {
-        max-width: 100%;
+        word-wrap: unset;
+        white-space: unset;
+    }
+
+
+    .laser__intro-body-container {
+        background: rgb(39, 101, 134);
+    }
+
+
+    .laser__intro-background {
+        display: none;
     }
 
 }
-
-@media only screen and (max-width: 600px) {
-    .laser__intro-title {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .laser__intro-tagline {
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
-    .laser__intro-p1,
-    .laser__intro-p2 {
-        padding: 20px 25px 0px;
-    }
-
-    .laser__intro-btn {
-        margin: 20px 25px 25px;
-    }
-
-    .treatmeant-card {
-        padding: 15px 20px;
-    }
-
-    [role="tablist"] {
-        display: flex;
-    }
-
-    .laser__jump-link {
-        display: none !important;
-    }
-
-    .contact-callout a.phone-link,
-    .contact-callout a.phone-link:visited {
-        display: block;
-    }
-
-    #alert-dismiss {
-        top: calc(50% - 15px);
-    }
-
-    #covid-button {
-        margin-top: 5px;
-    }
-
-    .treatment-card__title {
-        line-height: 1.2;
-    }
-} */
-
 
 /* Treatments */
 .laser__treatments-section {
