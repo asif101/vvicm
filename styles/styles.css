@@ -123,6 +123,10 @@ nav a:hover::after {
     right: 0;
 }
 
+nav a.current-page {
+    color: rgb(49, 129, 172)
+}
+
 .contact-callout {
     text-align: right;
     color: rgb(39, 101, 134) !important;
