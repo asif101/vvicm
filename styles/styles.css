@@ -898,6 +898,7 @@ label[for="burger"] {
     justify-content: center;
     align-items: center;
 }
+
 .laser__topdoc-text {
     font-weight: bold;
     margin-bottom: 3px;
@@ -990,6 +991,10 @@ label[for="burger"] {
         padding: 0px 20px 20px 35px;
     }
 
+    .laser__topdoc-container {
+        right: -45px;
+    }
+
     .laser__intro-btn {
         margin: 0px 20px 60px 35px;
     }
@@ -1023,6 +1028,10 @@ label[for="burger"] {
 
     .laser__intro-body-container {
         height: 70%
+    }
+
+    .laser__topdoc-container {
+        right: -75px;
     }
 
     .laser__intro-background {
