@@ -1021,35 +1021,7 @@ label[for="burger"] {
     }
 }
 
-
 @media only screen and (max-width: 980px) {
-    .laser__intro-section {
-        height: 600px;
-    }
-
-    .laser__intro-title-container {
-        height: 30%;
-    }
-
-    .laser__intro-body-container {
-        height: 70%
-    }
-
-    .laser__topdoc-container {
-        right: -75px;
-    }
-
-    .laser__intro-background {
-        height: 70%;
-    }
-
-    .laser__intro-pic {
-        background-position: bottom center;
-        background-size: 100% auto;
-    }
-}
-
-@media only screen and (max-width: 900px) {
 
     .laser__intro-section {
         height: auto;
@@ -1111,6 +1083,7 @@ label[for="burger"] {
         display: block;
         height: 200px;
         width: 200px;
+        margin-bottom: 20px;
         border-radius: 50%;
         background-color: white;
         background-image: url(../img/photos/lucas.png);
@@ -1121,41 +1094,10 @@ label[for="burger"] {
 }
 
 
-@media only screen and (max-width: 825px) {
-
-    .laser__intro-section {
-        height: auto;
-    }
-
-    .laser__intro-pic {
+@media only screen and (max-width: 780px) {
+    .laser__topdoc-container {
         display: none;
     }
-
-    .laser__intro-title-container {
-        width: 100%;
-    }
-
-
-    .laser__intro-title {
-        word-wrap: unset;
-        white-space: unset;
-    }
-
-    .laser__intro-tagline {
-        word-wrap: unset;
-        white-space: unset;
-    }
-
-
-    .laser__intro-body-container {
-        background: rgb(39, 101, 134);
-    }
-
-
-    .laser__intro-background {
-        display: none;
-    }
-
 }
 
 /* Treatments */
