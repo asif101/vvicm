@@ -863,16 +863,15 @@ label[for="burger"] {
 
 .laser__intro-body-container {
     height: 67%;
+    position: relative;
 }
 
 .laser__intro-p1 {
     padding: 60px 20px 30px 75px;
-
 }
 
 .laser__intro-p2 {
     padding: 0px 20px 30px 75px;
-
 }
 
 .laser__intro-btn {
@@ -888,6 +887,25 @@ label[for="burger"] {
 
 .laser__intro-btn:hover {
     background-color: rgba(255, 255, 255, .4);
+}
+
+.laser__topdoc-container {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.laser__topdoc-text {
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.laser__topdoc-badge {
+    width: 74px;
+    height: 54px;
 }
 
 .laser__intro-right {
@@ -1143,8 +1161,6 @@ label[for="burger"] {
     color: rgb(39, 101, 134);
     font-weight: bold;
 }
-
-.laser__treatments-body {}
 
 [role="tablist"] {
     padding: 0;
