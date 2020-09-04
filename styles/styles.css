@@ -78,7 +78,7 @@ header {
     max-width: calc(100% - 100px);
     display: block;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 nav {
@@ -608,12 +608,14 @@ label[for="burger"] {
     display: none;
 }
 
-.nav-wrapper #vvi-logo {
-    opacity: 0;
-    /* transition: opacity .3s;
-    transition-delay: 0s; */
-    height: 0px;
-    margin-top: 15px;
+#hamburger-vvi-logo {
+    display: none;
+    margin-top: 20px;
+    max-height: 100px;
+    max-width: calc(100% - 100px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
 }
 
 /* ===Media Queries=== */
@@ -623,6 +625,11 @@ label[for="burger"] {
     /* nav {
         display: none;
     } */
+
+    #hamburger-vvi-logo {
+        display: block;
+    }
+
     label[for="burger"] {
         display: block;
     }
@@ -734,18 +741,13 @@ label[for="burger"] {
         visibility: visible;
     }
 
-    .nav-container input:checked~.nav-wrapper #vvi-logo {
-        opacity: 1;
-        height: auto;
+    .nav-container input:checked~.nav-wrapper #hamburger-vvi-logo {
+        display: block;
     }
 
     .nav-container input:checked~.nav-wrapper ul>li {
         opacity: 1;
         /* transition-delay: 0.3s; */
-    }
-
-    #vvi-logo {
-        margin-bottom: 15px;
     }
 
     .hero-image {
@@ -1465,6 +1467,10 @@ label[for="burger"] {
 
 @media only screen and (max-width: 900px) {
     #vvi-logo {
+        max-width: 285px;
+    }
+
+    #hamburger-vvi-logo {
         max-width: 285px;
     }
 
