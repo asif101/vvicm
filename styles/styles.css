@@ -756,9 +756,7 @@ label[for="burger"] {
         display: flex;
         align-items: center;
         justify-content: center;
-        position: relative;
-        top: initial;
-        right: initial;
+        position: static;
     }
 
     .contact-callout .form-link {
