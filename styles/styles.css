@@ -838,6 +838,7 @@ label[for="burger"] {
 
 .laser__intro-title-container {
     height: 33%;
+    width: 90vw;
 }
 
 
@@ -1004,16 +1005,6 @@ label[for="burger"] {
 @media only screen and (max-width: 1152px) {
     .laser__intro-section {
         font-size: 1em;
-    }
-
-    .laser__intro-title {
-        word-wrap: none;
-        white-space: nowrap;
-    }
-
-    .laser__intro-tagline {
-        word-wrap: none;
-        white-space: nowrap;
     }
 }
 
