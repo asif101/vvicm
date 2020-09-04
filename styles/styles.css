@@ -696,12 +696,11 @@ label[for="burger"] {
         top: 0px;
         left: 0;
         width: 100%;
-        height: 100px;
+        height: 1px;
         z-index: 3;
-        /* transition: 0.3s;
-        transition-delay: 0.2s; */
+        transition: height 0.3s ease-in-out;
+        transition-delay: 0.2s;
         overflow: hidden;
-        visibility: hidden;
     }
 
     .nav-container input~.nav-wrapper ul {
@@ -730,6 +729,7 @@ label[for="burger"] {
 
     .nav-container input:checked~.nav-wrapper {
         height: 100%;
+
         /* transition-delay: 0s; */
         visibility: visible;
     }
