@@ -77,7 +77,6 @@
 
 function scrollToSection(el) {
 	var check = document.getElementById('burger');
-	console.log(check)
 	check.checked = false;
 	target = document.getElementById(el)
 	target.scrollIntoView({
