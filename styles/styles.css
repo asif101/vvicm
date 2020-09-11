@@ -514,9 +514,13 @@ section#hours-and-location a:hover {
     text-align: center;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+
+.covid-text-container {
+    flex-grow: 1;
 }
 
 #covid-button {
@@ -537,8 +541,6 @@ section#hours-and-location a:hover {
 }
 
 #alert-dismiss {
-    position: absolute;
-    right: 12px;
     color: #fff;
     background-color: transparent;
     cursor: pointer;
@@ -546,7 +548,6 @@ section#hours-and-location a:hover {
     font-size: 1.3em;
     border-radius: 1px;
     transition: background-color .2s;
-
 }
 
 #alert-dismiss:hover {
