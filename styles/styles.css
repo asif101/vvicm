@@ -1224,6 +1224,7 @@ label[for="burger"] {
 }
 
 .treatmeant-header__icon {
+    width: 20vw;
     max-height: 75px;
     max-width: 175px;
 }
