@@ -1567,6 +1567,99 @@ label[for="burger"] {
     }
 }
 
+/* MEET THE TEAM CSS */
+
+.meet-the-team-container {
+    width: 100%;
+}
+
+.meet-the-team-header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.meet-the-team-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.45rem;
+    font-weight: bold;
+    color: rgb(39, 101, 134);
+    padding: 20px 20px 0px 75px;
+    line-height: 1.5;
+
+}
+
+.meet-the-team-tagline {
+    font-size: 2.2rem;
+    font-style: italic;
+    color: rgb(39, 101, 134);
+    padding: 0px 20px 30px 75px;
+    line-height: 1.5;
+}
+
+.meet-the-team-body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(39, 93, 118);
+    background: linear-gradient(0deg, rgba(39, 93, 118, 1) 0%, rgba(188, 204, 212, 1) 39%, rgba(216, 226, 230, 1) 51%, rgba(237, 242, 244, 1) 65%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 100%);
+}
+
+.meet-the-team-member-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.meet-the-team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meet-the-team-member-image {
+    display: block;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: 5px solid rgb(39, 101, 134);
+    -webkit-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
+}
+
+.meet-the-team-member-image.lucas {
+    background-image: url(../img/photos/lucas.png);
+    background-position: 71% -4%;
+    background-size: 140%;
+}
+
+.meet-the-team-member-name {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(39, 101, 134);
+    line-height: 1.5;
+}
+
+.meet-the-team-desciption-container {
+    margin-top: 50px;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.meet-the-team-desciption-intro {
+    width: 60%;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(39, 101, 134);
+    line-height: 1.5;
+}
+
+
 /* ===ANIMATIONS=== */
 @keyframes slideInFromBottom {
     0% {
