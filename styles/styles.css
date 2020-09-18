@@ -904,7 +904,15 @@ label[for="burger"] {
     align-items: center;
 }
 
+.laser__topdoc-inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .laser__topdoc-text {
+    text-align: center;
     font-weight: bold;
     margin-bottom: 3px;
 }
@@ -1094,8 +1102,48 @@ label[for="burger"] {
 
 
 @media only screen and (max-width: 780px) {
+
+    .laser__intro-body-container {
+        flex-direction: column;
+    }
+
+    .laser__intro-body-text {
+        order: 1;
+    }
+
     .laser__topdoc-container {
-        display: none;
+        order: 0;
+        padding-top: 20px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .laser__topdoc-text {
+        font-size: 24px;
+        order: 2;
+        margin-top: 30px;
+    }
+
+    .laser__intro-p1 {
+        padding: 0px 20px 30px 35px;
+    }
+
+    .laser__intro-p2 {
+        padding: 0px 20px 30px 35px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .laser__topdoc-container {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .laser__topdoc-text {
+        margin-top: 20px;
     }
 }
 
