@@ -73,6 +73,13 @@
 		panels[0].hidden = false;
 	}
 
+	var teammembers = document.querySelectorAll('.meet-the-team-member')
+	if(teammembers) {
+		teammembers.forEach(el => {
+			el.addEventListener('click', () => {console.log(el.getAttribute('data-teammember'))})
+		})
+	}
+
 })();
 
 function scrollToSection(el) {
