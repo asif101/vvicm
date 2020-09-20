@@ -1260,6 +1260,11 @@ label[for="burger"] {
     align-items: flex-start;
 }
 
+.treatment-header__text {
+    flex-grow: 1;
+    width: 1px;
+}
+
 .treatment-card__title {
     font-weight: bold;
     font-size: 1.75em;
