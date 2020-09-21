@@ -1616,12 +1616,13 @@ label[for="burger"] {
     cursor: pointer;
 }
 
-.meet-the-team-member-image {
+.meet-the-team-member-image-container {
     display: block;
     height: 250px;
     width: 250px;
     margin-bottom: 20px;
     border-radius: 50%;
+    overflow: hidden;
     background-color: white;
     background-repeat: no-repeat;
     border: 5px solid rgb(39, 101, 134);
@@ -1630,11 +1631,18 @@ label[for="burger"] {
     box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
 }
 
+.meet-the-team-member-image-container > .lucas {
+    width:125%;
+    margin-top: 14px;
+    margin-left: -49px;
+}
+
+/* 
 .meet-the-team-member-image.lucas {
     background-image: url(../img/photos/lucas.png);
     background-position: 71% -4%;
     background-size: 140%;
-}
+} */
 
 .meet-the-team-member-name {
     font-family: 'Heebo', sans-serif;
