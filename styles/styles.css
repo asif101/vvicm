@@ -1679,6 +1679,11 @@ label[for="burger"] {
     transition: all .2s;
 }
 
+.meet-the-team-member:hover>.meet-the-team-member-name::after {
+    left: 0;
+    right: 0;
+}
+
 .meet-the-team-member.selected>.meet-the-team-member-name::after {
     left: 0;
     right: 0;
