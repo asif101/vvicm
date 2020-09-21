@@ -73,10 +73,20 @@
 		panels[0].hidden = false;
 	}
 
+	//meet the team js
+
 	var teammembers = document.querySelectorAll('.meet-the-team-member')
-	if(teammembers) {
+	if (teammembers) {
 		teammembers.forEach(el => {
-			el.addEventListener('click', () => {console.log(el.getAttribute('data-teammember'))})
+			el.addEventListener('click', () => {
+				var selected = el.getAttribute('data-teammember')
+				console.log(selected)
+				teammembers.forEach(x => {
+					if (x.getAttribute('data-teammember') === selected)
+						x.classList.add('selected')
+					else x.classList.remove('selected')
+				})
+			})
 		})
 	}
 
