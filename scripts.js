@@ -80,7 +80,6 @@
 		teammembers.forEach(el => {
 			el.addEventListener('click', () => {
 				var selected = el.getAttribute('data-teammember')
-				console.log(selected)
 				teammembers.forEach(x => {
 					if (x.getAttribute('data-teammember') === selected)
 						x.classList.add('selected')

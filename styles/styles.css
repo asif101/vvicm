@@ -1622,27 +1622,42 @@ label[for="burger"] {
     width: 250px;
     margin-bottom: 20px;
     border-radius: 50%;
+    position: relative;
     overflow: hidden;
-    background-color: white;
-    background-repeat: no-repeat;
+    background: linear-gradient(0deg, rgba(39, 93, 118, 1) 0%, rgba(188, 204, 212, 1) 39%, rgba(216, 226, 230, 1) 51%, rgba(237, 242, 244, 1) 65%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 100%);
     border: 5px solid rgb(39, 101, 134);
     -webkit-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
     box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
 }
 
-.meet-the-team-member-image-container > .lucas {
-    width:125%;
+.meet-the-team-member-image-container>.img-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 0.15s linear;
+}
+
+
+.meet-the-team-member.selected>.meet-the-team-member-image-container>.img-overlay {
+    opacity: 0;
+}
+
+.meet-the-team-member-image-container>img {
+    position: absolute;
+    z-index: 2;
+}
+
+
+.meet-the-team-member-image-container>.lucas {
+    width: 125%;
     margin-top: 14px;
     margin-left: -49px;
 }
-
-/* 
-.meet-the-team-member-image.lucas {
-    background-image: url(../img/photos/lucas.png);
-    background-position: 71% -4%;
-    background-size: 140%;
-} */
 
 .meet-the-team-member-name {
     font-family: 'Heebo', sans-serif;
