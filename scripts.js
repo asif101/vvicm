@@ -74,22 +74,32 @@
 	}
 
 	//meet the team js
-
-	var teammembers = document.querySelectorAll('.meet-the-team-member')
+	const teammembers = document.querySelectorAll('.meet-the-team-member')
+	const teammemberDescriptions = document.querySelectorAll('.meet-the-team-description')
 	if (teammembers) {
 		teammembers.forEach(el => {
 			el.addEventListener('click', () => {
-				var selected = el.getAttribute('data-teammember')
+				const name = el.getAttribute('data-teammember')
 				teammembers.forEach(x => {
-					if (x.getAttribute('data-teammember') === selected)
+					if (x.getAttribute('data-teammember') === name)
 						x.classList.add('selected')
 					else x.classList.remove('selected')
 				})
+				//handling description switching
+				let descriptionToDeselect = null
+				let descriptionToSelect = null
+				teammemberDescriptions.forEach(x => {
+					if (x.getAttribute('data-selected') === 'true') descriptionToDeselect = x
+					if (x.getAttribute('data-teammember') === name) descriptionToSelect = x
+				})
+				descriptionToDeselect.setAttribute('data-selected', 'false')
+				descriptionToSelect.setAttribute('data-selected', 'true')
+				fadeOut(descriptionToDeselect, () => { fadeIn(descriptionToSelect) })
 			})
 		})
 	}
 
-})();
+})()
 
 function scrollToSection(el) {
 	var check = document.getElementById('burger');
@@ -125,4 +135,33 @@ window.onclick = function (event) {
 	if ((event.target != statementContent) && (event.target != learnMoreButton)) {
 		statementContainer.classList.add("closed");
 	}
+}
+
+//fade in and out functions
+function fadeOut(element, callback, duration = 150) {
+	if (!element.style.opacity) element.style.opacity = 1
+	const step = element.style.opacity * 20 / duration
+	const animation = setInterval(() => {
+		if (element.style.opacity > 0) element.style.opacity -= step
+		else {
+			element.style.opacity = 0
+			clearInterval(animation)
+			if (callback) callback()
+		}
+	}, 20)
+}
+
+function fadeIn(element, callback, duration = 150) {
+	if (!element.style.opacity) element.style.opacity = 0
+	const step = 1 * 20 / duration
+	const animation = setInterval(() => {
+		if (element.style.opacity < 1) {
+			element.style.opacity = parseFloat(element.style.opacity) + step
+		}
+		else {
+			element.style.opacity = 1
+			clearInterval(animation)
+			if (callback) callback()
+		}
+	}, 20)
 }
