@@ -1657,10 +1657,18 @@ label[for="burger"] {
 }
 
 
+.meet-the-team-member-image-container>.kim {
+    width: 100%;
+}
+
 .meet-the-team-member-image-container>.lucas {
     width: 125%;
     margin-top: 14px;
     margin-left: -49px;
+}
+
+.meet-the-team-member-image-container>.tanbe {
+    width: 119%;
 }
 
 .meet-the-team-member-name {
