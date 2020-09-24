@@ -92,9 +92,11 @@
 					if (x.getAttribute('data-selected') === 'true') descriptionToDeselect = x
 					if (x.getAttribute('data-teammember') === name) descriptionToSelect = x
 				})
-				descriptionToDeselect.setAttribute('data-selected', 'false')
-				descriptionToSelect.setAttribute('data-selected', 'true')
-				fadeOut(descriptionToDeselect, () => { fadeIn(descriptionToSelect) })
+				if(descriptionToDeselect !== descriptionToSelect) {
+					descriptionToDeselect.setAttribute('data-selected', 'false')
+					descriptionToSelect.setAttribute('data-selected', 'true')
+					fadeOut(descriptionToDeselect, () => { fadeIn(descriptionToSelect) })
+				}
 			})
 		})
 	}
