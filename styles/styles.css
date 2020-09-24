@@ -1600,7 +1600,7 @@ label[for="burger"] {
 .meet-the-team-body {
     display: flex;
     flex-direction: column;
-    background: rgb(39, 93, 118);
+    /* background: #ecf5fa; */
     background: linear-gradient(0deg, rgba(39, 93, 118, 1) 0%, rgba(188, 204, 212, 1) 39%, rgba(216, 226, 230, 1) 51%, rgba(237, 242, 244, 1) 65%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 100%);
 }
 
@@ -1703,7 +1703,7 @@ label[for="burger"] {
 
 .meet-the-team-desciption-container {
     margin-top: 50px;
-    min-height: 600px;
+    min-height: 650px;
     position: relative;
 }
 
@@ -1773,6 +1773,16 @@ label[for="burger"] {
         transform: translateX(-50%);
     }
 
+}
+
+.meet-the-team-accolade-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.accolade {
+    width: 175px;
 }
 
 
