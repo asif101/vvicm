@@ -1573,6 +1573,10 @@ label[for="burger"] {
     width: 100%;
 }
 
+.meet-the-team-container-narrow {
+    display: none;
+}
+
 .meet-the-team-header-container {
     display: flex;
     flex-direction: column;
@@ -1600,7 +1604,6 @@ label[for="burger"] {
 .meet-the-team-body {
     display: flex;
     flex-direction: column;
-    /* background: #ecf5fa; */
     background: linear-gradient(0deg, rgba(39, 93, 118, 1) 0%, rgba(188, 204, 212, 1) 39%, rgba(216, 226, 230, 1) 51%, rgba(237, 242, 244, 1) 65%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 100%);
 }
 
@@ -1678,6 +1681,7 @@ label[for="burger"] {
     font-weight: bold;
     color: rgb(39, 101, 134);
     line-height: 1.5;
+    text-align: center;
 }
 
 .meet-the-team-member-name::after {
@@ -1753,6 +1757,16 @@ label[for="burger"] {
     right: calc((100% - 852px) / 4);
 }
 
+.meet-the-team-accolade-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.accolade {
+    width: 175px;
+}
+
 @media only screen and (max-width: 1250px) {
 
     .meet-the-team-description[data-teammember='Dr. KR Kurtis Kim, M.D.'] {
@@ -1775,15 +1789,72 @@ label[for="burger"] {
 
 }
 
-.meet-the-team-accolade-container {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+
+@media only screen and (max-width: 1100px) {
+
+    .meet-the-team-container {
+        display: none;
+    }
+
+    .meet-the-team-container-narrow {
+        display: block;
+    }
+
+    
+    .meet-the-team-container-narrow .meet-the-team-title {
+        text-align: center;
+    }
+    
+    .meet-the-team-container-narrow .meet-the-team-tagline {
+        text-align: center;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-body {
+        background: unset;
+        background-color: #ecf5fa;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-member-container {
+        justify-content: flex-start;
+        margin: 40px 20px 40px 30px;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-member-name {
+        width: 300px;
+        font-size: 1.5rem;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-description {
+        position: relative;
+        flex-grow: 1;
+        width: unset;
+        transform: none;
+        left: unset;
+        right: unset;
+        opacity: 1;
+        margin-left: 30px;
+        font-size: 1.2rem;
+    }
+/*     
+    .meet-the-team-container-narrow .meet-the-team-description > p {
+        position: relative;
+        flex-grow: 1;
+        width: unset;
+        transform: none;
+        left: unset;
+        right: unset;
+        opacity: 1;
+        margin-left: 30px;
+    } */
+
+
+    .accolade {
+        width: 100px;
+    }
 }
 
-.accolade {
-    width: 175px;
-}
 
 
 /* ===ANIMATIONS=== */

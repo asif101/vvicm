@@ -74,8 +74,8 @@
 	}
 
 	//meet the team js
-	const teammembers = document.querySelectorAll('.meet-the-team-member')
-	const teammemberDescriptions = document.querySelectorAll('.meet-the-team-description')
+	const teammembers = document.querySelectorAll('.meet-the-team-member.selectable')
+	const teammemberDescriptions = document.querySelectorAll('.meet-the-team-description.selectable')
 	if (teammembers) {
 		teammembers.forEach(el => {
 			el.addEventListener('click', () => {
