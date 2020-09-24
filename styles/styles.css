@@ -1802,16 +1802,19 @@ label[for="burger"] {
 
     
     .meet-the-team-container-narrow .meet-the-team-title {
+        padding: 0 20px;
         text-align: center;
     }
     
     .meet-the-team-container-narrow .meet-the-team-tagline {
+        padding: 0 20px;
         text-align: center;
     }
 
     .meet-the-team-container-narrow .meet-the-team-body {
         background: unset;
         background-color: #ecf5fa;
+        margin-top: 20px;
     }
 
     .meet-the-team-container-narrow .meet-the-team-member-container {
@@ -1837,18 +1840,6 @@ label[for="burger"] {
         margin-left: 30px;
         font-size: 1.2rem;
     }
-/*     
-    .meet-the-team-container-narrow .meet-the-team-description > p {
-        position: relative;
-        flex-grow: 1;
-        width: unset;
-        transform: none;
-        left: unset;
-        right: unset;
-        opacity: 1;
-        margin-left: 30px;
-    } */
-
 
     .accolade {
         width: 100px;
@@ -1856,6 +1847,31 @@ label[for="burger"] {
 }
 
 
+@media only screen and (max-width: 800px) {
+
+    .meet-the-team-container-narrow .meet-the-team-member-container {
+        flex-direction: column;
+        margin: 40px 5px;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-member-name {
+        width: unset;
+        font-size: 1.5rem;
+    }
+    
+    .meet-the-team-container-narrow .meet-the-team-description {
+        margin-left: 0px;
+        padding: 20px 20px;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-member {
+        margin-bottom: 30px;
+    }
+
+    .accolade {
+        width: 100px;
+    }
+}
 
 /* ===ANIMATIONS=== */
 @keyframes slideInFromBottom {
