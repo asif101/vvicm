@@ -1266,6 +1266,14 @@ label[for="burger"] {
     width: 1px;
 }
 
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+    .treatment-header__text {
+        width: auto;
+    }
+}
+
 .treatment-card__title {
     font-weight: bold;
     font-size: 1.75em;
@@ -1960,24 +1968,24 @@ label[for="burger"] {
         margin-left: calc((100% - 852px) / 4);
     }
 
-    
+
     .meet-the-team-container-narrow .accolade-kim {
         margin-left: calc((100% - 200px) / 2);
     }
 
-    .meet-the-team-container-narrow  .accolade-cww {
+    .meet-the-team-container-narrow .accolade-cww {
         margin-left: calc((100% - 280px) / 4);
     }
 
-    .meet-the-team-container-narrow  .accolade-finddoc-lucas {
+    .meet-the-team-container-narrow .accolade-finddoc-lucas {
         margin-left: calc((100% - 280px) / 4);
     }
 
-    .meet-the-team-container-narrow  .accolade-topdoc {
+    .meet-the-team-container-narrow .accolade-topdoc {
         margin-left: calc((100% - 280px) / 4);
     }
 
-    .meet-the-team-container-narrow  .accolade-finddoc-tanbe {
+    .meet-the-team-container-narrow .accolade-finddoc-tanbe {
         margin-left: calc((100% - 100px) / 2);
     }
 
