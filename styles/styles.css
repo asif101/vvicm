@@ -1579,6 +1579,10 @@ label[for="burger"] {
     .treatment-card__title {
         line-height: 1.2;
     }
+
+    .treatmeant-card__halo-row {
+        flex-direction: column;
+    }
 }
 
 /* MEET THE TEAM CSS */
