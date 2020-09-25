@@ -1758,13 +1758,16 @@ label[for="burger"] {
 }
 
 .meet-the-team-accolade-container {
-    width: 100%;
+    float: right;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
 .accolade {
-    width: 175px;
+    width: 150px;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -1800,12 +1803,12 @@ label[for="burger"] {
         display: block;
     }
 
-    
+
     .meet-the-team-container-narrow .meet-the-team-title {
         padding: 0 20px;
         text-align: center;
     }
-    
+
     .meet-the-team-container-narrow .meet-the-team-tagline {
         padding: 0 20px;
         text-align: center;
@@ -1841,8 +1844,16 @@ label[for="burger"] {
         font-size: 1.2rem;
     }
 
+    .meet-the-team-container-narrow .meet-the-team-accolade-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     .accolade {
         width: 100px;
+        margin: 0;
     }
 }
 
@@ -1858,7 +1869,7 @@ label[for="burger"] {
         width: unset;
         font-size: 1.5rem;
     }
-    
+
     .meet-the-team-container-narrow .meet-the-team-description {
         margin-left: 0px;
         padding: 20px 20px;
