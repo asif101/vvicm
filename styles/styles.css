@@ -1621,14 +1621,6 @@ label[for="burger"] {
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
-@media screen and (-ms-high-contrast: active),
-(-ms-high-contrast: none) {
-
-    .meet-the-team-bg-triangles {
-        display: none;
-    }
-}
-
 .meet-the-team-member-container {
     display: flex;
     justify-content: space-evenly;
@@ -1839,7 +1831,7 @@ label[for="burger"] {
     }
 
     .meet-the-team-container-narrow .meet-the-team-body {
-        background: unset;
+        background-image: none;
         background-color: #ecf5fa;
         margin-top: 20px;
     }
@@ -1901,6 +1893,7 @@ label[for="burger"] {
     .meet-the-team-container-narrow .meet-the-team-description {
         margin-left: 0px;
         padding: 20px 20px;
+        width: 100%;
     }
 
     .meet-the-team-container-narrow .meet-the-team-member {
@@ -1910,6 +1903,20 @@ label[for="burger"] {
     .accolade {
         width: 100px;
     }
+}
+
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+    .meet-the-team-bg-triangles {
+        display: none;
+    }
+
+    .meet-the-team-member {
+        margin-left: calc((100% - 852px) / 4);
+    }
+
 }
 
 /* ===ANIMATIONS=== */
