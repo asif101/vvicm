@@ -1940,9 +1940,6 @@ label[for="burger"] {
         margin-bottom: 30px;
     }
 
-    .accolade {
-        width: 100px;
-    }
 }
 
 
@@ -1955,6 +1952,27 @@ label[for="burger"] {
 
     .meet-the-team-member {
         margin-left: calc((100% - 852px) / 4);
+    }
+
+    
+    .meet-the-team-container-narrow .accolade-kim {
+        margin-left: calc((100% - 200px) / 2);
+    }
+
+    .meet-the-team-container-narrow  .accolade-cww {
+        margin-left: calc((100% - 280px) / 4);
+    }
+
+    .meet-the-team-container-narrow  .accolade-finddoc-lucas {
+        margin-left: calc((100% - 280px) / 4);
+    }
+
+    .meet-the-team-container-narrow  .accolade-topdoc {
+        margin-left: calc((100% - 280px) / 4);
+    }
+
+    .meet-the-team-container-narrow  .accolade-finddoc-tanbe {
+        margin-left: calc((100% - 100px) / 2);
     }
 
 }
