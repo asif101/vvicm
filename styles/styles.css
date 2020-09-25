@@ -100,6 +100,7 @@ nav a:visited {
     /* transition: all .2s; */
     cursor: pointer;
     outline: none !important;
+    text-align: center;
 }
 
 nav a:hover {
@@ -1570,6 +1571,416 @@ label[for="burger"] {
     .treatment-card__title {
         line-height: 1.2;
     }
+}
+
+/* MEET THE TEAM CSS */
+
+.meet-the-team-container {
+    width: 100%;
+}
+
+.meet-the-team-container-narrow {
+    display: none;
+}
+
+.meet-the-team-header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.meet-the-team-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.45rem;
+    font-weight: bold;
+    color: rgb(39, 101, 134);
+    padding: 20px 20px 0px 75px;
+    line-height: 1.5;
+
+}
+
+.meet-the-team-tagline {
+    font-size: 2.2rem;
+    font-style: italic;
+    color: rgb(39, 101, 134);
+    padding: 0px 20px 30px 75px;
+    line-height: 1.5;
+}
+
+.meet-the-team-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, rgba(39, 93, 118, 1) 0%, rgba(188, 204, 212, 1) 39%, rgba(216, 226, 230, 1) 51%, rgba(237, 242, 244, 1) 65%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 100%);
+    overflow: hidden;
+}
+
+.meet-the-team-bg-triangles {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.3;
+    pointer-events: none;
+    transform: translateY(50%);
+    -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.meet-the-team-member-container {
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+
+.meet-the-team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.meet-the-team-member-image-container {
+    display: block;
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(39, 93, 118, 1) 0%, rgba(188, 204, 212, 1) 39%, rgba(216, 226, 230, 1) 51%, rgba(237, 242, 244, 1) 65%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 100%);
+    border: 5px solid rgb(39, 101, 134);
+    -webkit-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
+}
+
+.meet-the-team-member-image-container>.img-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    opacity: 1;
+    transition: opacity 0.15s linear;
+}
+
+
+.meet-the-team-member.selected>.meet-the-team-member-image-container>.img-overlay {
+    opacity: 0;
+}
+
+.meet-the-team-member-image-container>img {
+    position: absolute;
+    z-index: 2;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+
+
+.meet-the-team-member-image-container>.kim {
+    width: 100%;
+}
+
+.meet-the-team-member-image-container>.lucas {
+    width: 125%;
+    margin-top: 14px;
+    margin-left: -49px;
+}
+
+.meet-the-team-member-image-container>.tanbe {
+    width: 119%;
+}
+
+.meet-the-team-member-name {
+    position: relative;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: rgb(39, 101, 134);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.meet-the-team-member-name::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    height: 3px;
+    background: rgb(39, 101, 134);
+    transition: all .2s;
+}
+
+.meet-the-team-member:hover>.meet-the-team-member-name::after {
+    left: 0;
+    right: 0;
+}
+
+.meet-the-team-member.selected>.meet-the-team-member-name::after {
+    left: 0;
+    right: 0;
+}
+
+.meet-the-team-desciption-container {
+    margin-top: 50px;
+    min-height: 700px;
+    position: relative;
+    z-index: 2;
+}
+
+.meet-the-team-description {
+    opacity: 0;
+}
+
+.meet-the-team-description.doctor-description {
+    position: absolute;
+    width: 75%;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.4rem;
+    color: black;
+    line-height: 1.3;
+    opacity: 0;
+}
+
+.meet-the-team-description[data-teammember='intro'] {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color: rgb(39, 101, 134);
+    line-height: 1.5;
+    opacity: 1;
+}
+
+.meet-the-team-description[data-teammember='Dr. KR Kurtis Kim, M.D.'] {
+    left: calc((100% - 852px) / 4);
+}
+
+.meet-the-team-description[data-teammember='Dr. Paul Lucas, M.D.'] {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.meet-the-team-description[data-teammember='Dr. Alain Tanbe, M.D., RPVI'] {
+    right: calc((100% - 852px) / 4);
+}
+
+.meet-the-team-accolade-container {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.accolade-kim {
+    width: 200px;
+    margin: 10px 20px 10px 10px;
+}
+
+.accolade-cww {
+    width: 80px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.accolade-finddoc-lucas {
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.accolade-topdoc {
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.accolade-finddoc-tanbe {
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .meet-the-team-description[data-teammember='Dr. KR Kurtis Kim, M.D.'] {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .meet-the-team-description[data-teammember='Dr. Paul Lucas, M.D.'] {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .meet-the-team-description[data-teammember='Dr. Alain Tanbe, M.D., RPVI'] {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+    .meet-the-team-container {
+        display: none;
+    }
+
+    .meet-the-team-container-narrow {
+        display: block;
+    }
+
+
+    .meet-the-team-container-narrow .meet-the-team-title {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-tagline {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-body {
+        background-image: none;
+        background-color: #ecf5fa;
+        margin-top: 20px;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-member-container {
+        justify-content: flex-start;
+        margin: 40px 20px 40px 30px;
+        cursor: default;
+        pointer-events: none;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-member-name {
+        width: 300px;
+        font-size: 1.5rem;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-description {
+        position: relative;
+        flex-grow: 1;
+        width: unset;
+        transform: none;
+        left: unset;
+        right: unset;
+        opacity: 1;
+        margin-left: 30px;
+        font-size: 1.2rem;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-accolade-container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .accolade-kim {
+        margin: 0;
+    }
+
+    .accolade-cww {
+        margin: 0;
+    }
+
+    .accolade-finddoc-lucas {
+        margin: 0;
+        height: 81px;
+    }
+
+    .accolade-topdoc {
+        margin: 0;
+    }
+
+    .accolade-finddoc-tanbe {
+        margin: 0;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-bg-triangles {
+        transform: none;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .meet-the-team-container-narrow .meet-the-team-member-container {
+        flex-direction: column;
+        margin: 40px 5px;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-member-name {
+        width: unset;
+        font-size: 1.5rem;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-description {
+        margin-left: 0px;
+        padding: 20px 20px;
+        width: 100%;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-member {
+        margin-bottom: 30px;
+    }
+
+}
+
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+    .meet-the-team-bg-triangles {
+        display: none;
+    }
+
+    .meet-the-team-member {
+        margin-left: calc((100% - 852px) / 4);
+    }
+
+    
+    .meet-the-team-container-narrow .accolade-kim {
+        margin-left: calc((100% - 200px) / 2);
+    }
+
+    .meet-the-team-container-narrow  .accolade-cww {
+        margin-left: calc((100% - 280px) / 4);
+    }
+
+    .meet-the-team-container-narrow  .accolade-finddoc-lucas {
+        margin-left: calc((100% - 280px) / 4);
+    }
+
+    .meet-the-team-container-narrow  .accolade-topdoc {
+        margin-left: calc((100% - 280px) / 4);
+    }
+
+    .meet-the-team-container-narrow  .accolade-finddoc-tanbe {
+        margin-left: calc((100% - 100px) / 2);
+    }
+
 }
 
 /* ===ANIMATIONS=== */

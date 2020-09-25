@@ -73,7 +73,35 @@
 		panels[0].hidden = false;
 	}
 
-})();
+	// meet the team js
+	const teammembers = document.querySelectorAll('.meet-the-team-member.selectable')
+	const teammemberDescriptions = document.querySelectorAll('.meet-the-team-description.selectable')
+	if (teammembers) {
+		teammembers.forEach(function(el) {
+			el.addEventListener('click', function() {
+				const name = el.getAttribute('data-teammember')
+				teammembers.forEach(function(x) {
+					if (x.getAttribute('data-teammember') === name)
+						x.classList.add('selected')
+					else x.classList.remove('selected')
+				})
+				//handling description switching
+				let descriptionToDeselect = null
+				let descriptionToSelect = null
+				teammemberDescriptions.forEach(function(x) {
+					if (x.getAttribute('data-selected') === 'true') descriptionToDeselect = x
+					if (x.getAttribute('data-teammember') === name) descriptionToSelect = x
+				})
+				if (descriptionToDeselect !== descriptionToSelect) {
+					descriptionToDeselect.setAttribute('data-selected', 'false')
+					descriptionToSelect.setAttribute('data-selected', 'true')
+					fadeOut(descriptionToDeselect, function() { fadeIn(descriptionToSelect, null, 150) }, 150)
+				}
+			})
+		})
+	}
+
+})()
 
 function scrollToSection(el) {
 	var check = document.getElementById('burger');
@@ -109,4 +137,33 @@ window.onclick = function (event) {
 	if ((event.target != statementContent) && (event.target != learnMoreButton)) {
 		statementContainer.classList.add("closed");
 	}
+}
+
+//fade in and out functions
+function fadeOut(element, callback, duration) {
+	if (!element.style.opacity) element.style.opacity = 1
+	const step = element.style.opacity * 20 / duration
+	const animation = setInterval(function() {
+		if (element.style.opacity > 0) element.style.opacity -= step
+		else {
+			element.style.opacity = 0
+			clearInterval(animation)
+			if (callback) callback()
+		}
+	}, 20)
+}
+
+function fadeIn(element, callback, duration) {
+	if (!element.style.opacity) element.style.opacity = 0
+	const step = 1 * 20 / duration
+	const animation = setInterval(function() {
+		if (element.style.opacity < 1) {
+			element.style.opacity = parseFloat(element.style.opacity) + step
+		}
+		else {
+			element.style.opacity = 1
+			clearInterval(animation)
+			if (callback) callback()
+		}
+	}, 20)
 }

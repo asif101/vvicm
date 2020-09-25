@@ -33,34 +33,36 @@
     <button id="alert-dismiss" title="Dismiss Alert" onclick="dismissAlert()"><i class="fas fa-times"></i></button>
   </div>
   <header>
-    
+
     <img id="vvi-logo" src="./img/logos/vvi-logo.png" alt="Vein &amp; Vascular
         Institute of
         Central Maryland">
-        <div class="nav-container">
-          <input id="burger" type="checkbox" />
-          <label for="burger">
-              <span></span>
-              <span></span>
-              <span></span>
-          </label>
-          <div class="nav-wrapper">
-            <img id="hamburger-vvi-logo" src="./img/logos/vvi-logo.png" alt="Vein &amp; Vascular
+    <div class="nav-container">
+      <input id="burger" type="checkbox" />
+      <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-wrapper">
+        <img id="hamburger-vvi-logo" src="./img/logos/vvi-logo.png" alt="Vein &amp; Vascular
             Institute of
             Central Maryland">
-            <div class="contact-callout">
-              <div>Lutherville, MD <a class="phone-link" href="tel:667-206-2343">(667) 206-2343</a></div>
-              <a href="#contact" class="form-link" onclick="scrollToSection('contact')">Request a Vascular <br>Consultation</a>
-            </div>
-      <nav>
-        <a class='current-page' href="#">Vein & Vascular Institute</a>
-        <a href="./pages/laser-center.html">Cosmetic Laser Center</a>
-        <a href="https://www.surgerycenterofyorkroad.com/">Surgery Center</a>
-        <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
-      </nav>
-          </div>
+        <div class="contact-callout">
+          <div>Lutherville, MD <a class="phone-link" href="tel:667-206-2343">(667) 206-2343</a></div>
+          <a href="#contact" class="form-link" onclick="scrollToSection('contact')">Request a Vascular
+            <br>Consultation</a>
+        </div>
+        <nav>
+          <a href="#" class='current-page'>Vein & Vascular Institute</a>
+          <a href="./pages/laser-center.html">Cosmetic Laser Center</a>
+          <a href="https://www.surgerycenterofyorkroad.com/">Surgery Center</a>
+          <a href="./pages/meet-the-team.html">Meet The Team</a>
+          <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+        </nav>
+      </div>
 
-  </div>
+    </div>
   </header>
   <main>
     <section id="introduction">
@@ -84,19 +86,19 @@
       </article>
     </section>
     <section id="surgery-center">
-        <a href="https://www.surgerycenterofyorkroad.com/" class="feature-link">
-      <div class="feature-description">
-        The Vein & Vascular Institute and the Surgery Center of York Road
-        are housed
-        within the same facility. Click here to learn more about the Surgery
-        Center.
-      </div>
-      <div class="feature-button">
-        <img id="surgery-logo" src="./img/logos/surgery-logo.png" alt="Surgery
+      <a href="https://www.surgerycenterofyorkroad.com/" class="feature-link">
+        <div class="feature-description">
+          The Vein & Vascular Institute and the Surgery Center of York Road
+          are housed
+          within the same facility. Click here to learn more about the Surgery
+          Center.
+        </div>
+        <div class="feature-button">
+          <img id="surgery-logo" src="./img/logos/surgery-logo.png" alt="Surgery
             Center of York
             Road">
-      </div>
-    </a>
+        </div>
+      </a>
     </section>
     <section id="hours-and-location">
       <div class="hours-info">
@@ -157,19 +159,19 @@
         </fieldset>
         <fieldset class="terms-fields">
           <label for="terms-checkbox" class="terms-container">
-            I accept the <span class="popover-title popover-wrapper">Terms of Use            <div class="popover-content">
+            I accept the <span class="popover-title popover-wrapper">Terms of Use <div class="popover-content">
                 <p class="popover-message">
-                    By checking the box on the consultation form, 
-                    you agree to the following Terms of Use: Communications 
-                    through our website or via email are not encrypted and 
-                    are not guaranteed to be secure. Use of the internet or 
-                    email is for your convenience only, and by using them you 
-                    assume the risk of unauthorized use. By checking this box 
-                    you hereby agree to hold Cohesion Health Partners, the Vein 
-                    and Vascular Institute of Central Maryland, the Surgery Center 
-                    of York Road, as well as its physicians, staff, and affiliates 
-                    harmless from any hacking or any other unauthorized use of your 
-                    personal information by outside parties.</p>
+                  By checking the box on the consultation form,
+                  you agree to the following Terms of Use: Communications
+                  through our website or via email are not encrypted and
+                  are not guaranteed to be secure. Use of the internet or
+                  email is for your convenience only, and by using them you
+                  assume the risk of unauthorized use. By checking this box
+                  you hereby agree to hold Cohesion Health Partners, the Vein
+                  and Vascular Institute of Central Maryland, the Surgery Center
+                  of York Road, as well as its physicians, staff, and affiliates
+                  harmless from any hacking or any other unauthorized use of your
+                  personal information by outside parties.</p>
               </div></span>
             <input type="checkbox" required id="terms-checkbox">
             <span class="checkmark"></span>
@@ -186,19 +188,21 @@
   </footer>
   <div id="statement-modal" class="statement-container closed">
     <div class="statement-content" id="statement-content">
-    <div class="statement-header">
-      <div>Coronavirus (COVID-19) Statement</div>
-      <button id="statement-close" class="statement-close" title="Close Statement" onclick="closeStatement()"><i class="fas fa-times"></i></button>
+      <div class="statement-header">
+        <div>Coronavirus (COVID-19) Statement</div>
+        <button id="statement-close" class="statement-close" title="Close Statement" onclick="closeStatement()"><i
+            class="fas fa-times"></i></button>
+      </div>
+      <div class="statement-body">The Surgery Center of York Road is taking every precaution during the
+        COVID 19 pandemic. The center and staff are following all CDC guidelines
+        for disinfection and prevention of transmission. Please be advised that
+        while we can not guarantee non-exposure to COVID 19, we will continue to
+        make every effort toward prevention.</div>
     </div>
-    <div class="statement-body">The Surgery Center of York Road is taking every precaution during the 
-      COVID 19 pandemic. The center and staff are following all CDC guidelines 
-      for disinfection and prevention of transmission. Please be advised that 
-      while we can not guarantee non-exposure to COVID 19, we will continue to 
-      make every effort toward prevention.</div>
   </div>
-</div>
-<script src="https://kit.fontawesome.com/1e5f626008.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="smoothscroll.min.js"></script>
-<script type="text/javascript" src="scripts.js"></script>
+  <script src="https://kit.fontawesome.com/1e5f626008.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="smoothscroll.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
+
 </html>

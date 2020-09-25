@@ -1,0 +1,352 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Meet the Team</title>
+  <meta name="description" content="">
+  <meta name="author" content="VVICM">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="~./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="../styles/normalize.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="covid-alert" id="covid-alert">
+    <div class='covid-text-container'>
+      <span>ALERT - Coronavirus (COVID-19) Statement</span>
+      <button id="covid-button" title="Read COVID-19 Statement" onclick="showStatement()">Learn More</button>
+    </div>
+    <button id="alert-dismiss" title="Dismiss Alert" onclick="dismissAlert()"><i class="fas fa-times"></i></button>
+  </div>
+  <header>
+
+    <img id="vvi-logo" src="../img/logos/vvi-logo.png" alt="Vein &amp; Vascular
+        Institute of
+        Central Maryland">
+    <div class="nav-container">
+      <input id="burger" type="checkbox" />
+      <label for="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-wrapper">
+        <img id="hamburger-vvi-logo" src="../img/logos/vvi-logo.png" alt="Vein &amp; Vascular
+            Institute of
+            Central Maryland">
+        <div class="contact-callout">
+          <div>Lutherville, MD <a class="phone-link" href="tel:667-206-2343">(667) 206-2343</a></div>
+          <a href="#contact" class="form-link" onclick="scrollToSection('contact')">Request a Vascular
+            <br>Consultation</a>
+        </div>
+        <nav>
+          <a href="../">Vein &amp; Vascular Institute</a>
+          <a href='./laser-center.html'>Cosmetic Laser Center</a>
+          <a href="https://www.surgerycenterofyorkroad.com/">Surgery Center</a>
+          <a href="#" class='current-page'>Meet The Team</a>
+          <a href="#contact" onclick="scrollToSection('contact')">Contact</a>
+        </nav>
+      </div>
+
+    </div>
+  </header>
+  <main>
+    <section class="meet-the-team-container">
+      <div class="meet-the-team-header-container">
+        <div class="meet-the-team-title">Meet the Team</div>
+        <div class="meet-the-team-tagline">Board certified and dedicated to providing medical care specifically tailored
+          to your needs</div>
+      </div>
+      <div class="meet-the-team-body">
+        <div class="meet-the-team-member-container">
+          <div class="meet-the-team-member selectable" data-teammember='Dr. KR Kurtis Kim, M.D.'>
+            <div class="meet-the-team-member-image-container">
+              <img class="kim" src='../img/photos/Kim.png'>
+              <div class="img-overlay"></div>
+            </div>
+            <span class="meet-the-team-member-name">Dr. KR Kurtis Kim, M.D.</span>
+          </div>
+          <div class="meet-the-team-member selectable" data-teammember='Dr. Paul Lucas, M.D.'>
+            <div class="meet-the-team-member-image-container">
+              <img class="lucas" src='../img/photos/lucas.png'>
+              <div class="img-overlay"></div>
+            </div>
+            <span class="meet-the-team-member-name">Dr. Paul Lucas, M.D.</span>
+          </div>
+          <div class="meet-the-team-member selectable" data-teammember='Dr. Alain Tanbe, M.D., RPVI'>
+            <div class="meet-the-team-member-image-container">
+              <img class="tanbe" src='../img/photos/Tanbe.png'>
+              <div class="img-overlay"></div>
+            </div>
+            <span class="meet-the-team-member-name">Dr. Alain Tanbe, M.D., RPVI</span>
+          </div>
+        </div>
+        <div class="meet-the-team-desciption-container">
+          <span class="meet-the-team-description selectable" data-teammember='intro' data-selected='true'>Doctors Lucas,
+            Kim, and
+            Tanbe of VVICM are
+            board certified
+            vascular surgeons dedicated to the comprehensive treatment of all facets of vascular disease. Our providers
+            are leading experts in the field.</span>
+          <div class="meet-the-team-description doctor-description selectable" data-teammember='Dr. KR Kurtis Kim, M.D.'
+            data-selected='false'>
+            <div class="meet-the-team-accolade-container">
+              <img class="accolade-kim" src=" ../img/logos/Kim Accolade.png" />
+            </div>
+            <p>Dr Kim is a fellowship-trained and board-certified vascular surgeon. He sees and treats all aspects of
+              vascular disease including arteries and veins, tailoring minimally invasive as well as open surgeries for
+              the best outcome and comfort of the patients in mind. </p>
+            <p>Before coming to Baltimore, he was an academic vascular surgeon at the Weill Cornell Medical School in
+              New York. There, he functioned as an assistant professor of clinical surgery and the lead in the resident
+              surgical technique program. For the past decade now, he has been in Baltimore, focusing on the diagnosis
+              and minimally invasive treatments for leg swelling and pelvic venous congestion using intravascular
+              ultrasound(IVUS) for which his expertise is recognized locally, regionally and internationally.</p>
+            <p> Dr Kim is a strong advocate for the awareness of May-Thurner Syndrome which leads to leg and pelvic
+              pain, and was featured in WBAL 11 medical segment that has won the prestigious National Headline Broadcast
+              award in 2020. A recipient of Arnold P. Gold Foundation’s Humanism Award, Dr. Kim’s genuine interest for
+              the well-being of his patients have been deeply appreciated by many of his patients and their families.
+            </p>
+          </div>
+          <div class="meet-the-team-description doctor-description selectable" data-teammember='Dr. Paul Lucas, M.D.'
+            data-selected='false'>
+            <div class="meet-the-team-accolade-container">
+              <img class="accolade-cww" src=" ../img/logos/CWW Accolade.png" />
+              <img class="accolade-finddoc-lucas" src=" ../img/logos/Find Top Doc Badge.png" />
+              <img class="accolade-topdoc" src=" ../img/logos/Top Doc Badge Round Blue.svg" />
+            </div>
+            <p>Dr. Lucas is a vascular surgeon with nearly 20 years of experience in private practice. He serves as the
+              Medical Director of the Vein and Vascular Institute of Central Maryland (VVICM), and is a Board Certified
+              Vascular Surgeon. He specializes and treats a multitude of vascular diseases and conditions, both arterial
+              and venous, using minimally invasive and open techniques to ensure the best possible outcomes for his
+              patients.
+            </p>
+            <p>Dr Lucas has a special interest in spider veins, and is a trained laser specialist offering multiple
+              modalities for treatment. He is the only vascular surgeon in the region to offer Veingogh and Sciton laser
+              treatments with ClearV.
+            </p>
+            <p>In addition, Dr Lucas offers laser skin care using HALO, BBL, and skin resurfacing peels to reduce
+              wrinkles and fine lines, and to provide his patients with a more rejuvenated appearance.</p>
+            <p>Dr Lucas has been frequently recognized as a Baltimore Magazine Top Doc, and is known for his
+              compassionate and caring doctor-patient relationships, and believes that medical care is a comprehensive
+              team effort.
+            </p>
+          </div>
+          <div class="meet-the-team-description doctor-description selectable"
+            data-teammember='Dr. Alain Tanbe, M.D., RPVI' data-selected='false'>
+            <div class="meet-the-team-accolade-container">
+              <img class="accolade-finddoc-tanbe" src=" ../img/logos/Find Top Doc Badge.png" />
+            </div>
+            <p>Dr. Tanbe is a fellowship-trained, Board Certified Vascular Surgeon. His surgical residency was completed
+              at Maine Medical Center-Tufts University and he performed a vascular fellowship at North Shore University
+              hospital in New York.
+            </p>
+            <p> Dr. Tanbe covers the full spectrum of vascular care including peripheral artery disease, vascular
+              blockages, lower extremities circulation problems, leg swelling, Varicose veins, spider veins, Venous
+              insufficiency, diabetic wounds, Carotid artery disease and vascular aneurysms.
+            </p>
+            <p>He utilizes the latest and
+              most cutting-edge minimally invasive equipment and techniques and works closely with every patient to
+              assure the most appropriate treatment of their vascular issues.
+            </p>
+          </div>
+        </div>
+        <img class='meet-the-team-bg-triangles' src='../img//blue-triangles.JPG' />
+      </div>
+    </section>
+    <section class="meet-the-team-container-narrow">
+      <div class="meet-the-team-header-container">
+        <div class="meet-the-team-title">Meet the Team</div>
+        <div class="meet-the-team-tagline">Board certified and dedicated to providing medical care specifically tailored
+          to your needs</div>
+      </div>
+      <div class="meet-the-team-body">
+
+        <div class="meet-the-team-member-container">
+          <div class="meet-the-team-member">
+            <div class="meet-the-team-member-image-container">
+              <img class="kim" src='../img/photos/Kim.png'>
+              <div class="img-overlay"></div>
+            </div>
+            <span class="meet-the-team-member-name">Dr. KR Kurtis Kim, M.D.</span>
+          </div>
+
+          <div class="meet-the-team-description doctor-description">
+            <p>Dr Kim is a fellowship-trained and board-certified vascular surgeon. He sees and treats all aspects of
+              vascular disease including arteries and veins, tailoring minimally invasive as well as open surgeries for
+              the best outcome and comfort of the patients in mind. </p>
+            <p>Before coming to Baltimore, he was an academic vascular surgeon at the Weill Cornell Medical School in
+              New York. There, he functioned as an assistant professor of clinical surgery and the lead in the resident
+              surgical technique program. For the past decade now, he has been in Baltimore, focusing on the diagnosis
+              and minimally invasive treatments for leg swelling and pelvic venous congestion using intravascular
+              ultrasound(IVUS) for which his expertise is recognized locally, regionally and internationally.</p>
+            <p> Dr Kim is a strong advocate for the awareness of May-Thurner Syndrome which leads to leg and pelvic
+              pain, and was featured in WBAL 11 medical segment that has won the prestigious National Headline Broadcast
+              award in 2020. A recipient of Arnold P. Gold Foundation’s Humanism Award, Dr. Kim’s genuine interest for
+              the well-being of his patients have been deeply appreciated by many of his patients and their families.
+            </p>
+            <div class="meet-the-team-accolade-container">
+              <img class="accolade-kim" src=" ../img/logos/Kim Accolade.png" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="meet-the-team-member-container">
+
+          <div class="meet-the-team-member">
+            <div class="meet-the-team-member-image-container">
+              <img class="lucas" src='../img/photos/lucas.png'>
+              <div class="img-overlay"></div>
+            </div>
+            <span class="meet-the-team-member-name">Dr. Paul Lucas, M.D.</span>
+          </div>
+
+          <div class="meet-the-team-description doctor-description">
+            <p>Dr. Lucas is a vascular surgeon with nearly 20 years of experience in private practice. He serves as the
+              Medical Director of the Vein and Vascular Institute of Central Maryland (VVICM), and is a Board Certified
+              Vascular Surgeon. He specializes and treats a multitude of vascular diseases and conditions, both arterial
+              and venous, using minimally invasive and open techniques to ensure the best possible outcomes for his
+              patients.
+            </p>
+            <p>Dr Lucas has a special interest in spider veins, and is a trained laser specialist offering multiple
+              modalities for treatment. He is the only vascular surgeon in the region to offer Veingogh and Sciton laser
+              treatments with ClearV.
+            </p>
+            <p>In addition, Dr Lucas offers laser skin care using HALO, BBL, and skin resurfacing peels to reduce
+              wrinkles and fine lines, and to provide his patients with a more rejuvenated appearance.</p>
+            <p>Dr Lucas has been frequently recognized as a Baltimore Magazine Top Doc, and is known for his
+              compassionate and caring doctor-patient relationships, and believes that medical care is a comprehensive
+              team effort.
+            </p>
+            <div class="meet-the-team-accolade-container">
+              <img class="accolade-cww" src=" ../img/logos/CWW Accolade.png" />
+              <img class="accolade-finddoc-lucas" src=" ../img/logos/Find Top Doc Badge.png" />
+              <img class="accolade-topdoc" src=" ../img/logos/Top Doc Badge Round Blue.svg" />
+            </div>
+          </div>
+
+        </div>
+
+        <div class="meet-the-team-member-container">
+
+          <div class="meet-the-team-member">
+            <div class="meet-the-team-member-image-container">
+              <img class="tanbe" src='../img/photos/Tanbe.png'>
+              <div class="img-overlay"></div>
+            </div>
+            <span class="meet-the-team-member-name">Dr. Alain Tanbe, M.D., RPVI</span>
+          </div>
+          <div class="meet-the-team-description doctor-description">
+            <p>Dr. Tanbe is a fellowship-trained, Board Certified Vascular Surgeon. His surgical residency was completed
+              at Maine Medical Center-Tufts University and he performed a vascular fellowship at North Shore University
+              hospital in New York.
+            </p>
+            <p> Dr. Tanbe covers the full spectrum of vascular care including peripheral artery disease, vascular
+              blockages, lower extremities circulation problems, leg swelling, Varicose veins, spider veins, Venous
+              insufficiency, diabetic wounds, Carotid artery disease and vascular aneurysms.
+            </p>
+            <p>He utilizes the latest and
+              most cutting-edge minimally invasive equipment and techniques and works closely with every patient to
+              assure the most appropriate treatment of their vascular issues.
+            </p>
+            <div class="meet-the-team-accolade-container">
+              <img class="accolade-finddoc-tanbe" src=" ../img/logos/Find Top Doc Badge.png" />
+            </div>
+          </div>
+        </div>
+        <img class='meet-the-team-bg-triangles' src='../img//blue-triangles.JPG' />
+      </div>
+    </section>
+    <section id="contact">
+      <form id="contact-form" name="contact" netlify>
+        <fieldset>
+          <legend>First Name</legend>
+          <label for="first name" class="label-required"><span>First Name</span></label>
+          <input type="text" name="first name" required />
+        </fieldset>
+        <fieldset>
+          <legend>Last Name</legend>
+          <label for="last name" class="label-required"><span>Last Name</span></label>
+          <input type="text" name="last name" required />
+        </fieldset>
+        <fieldset>
+          <legend>Email</legend>
+          <label for="email" class="label-required"><span>Email</span></label>
+          <input type="email" name="email" required />
+        </fieldset>
+        <fieldset>
+          <legend>Phone Number</legend>
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" />
+        </fieldset>
+        <fieldset class="reason-fields">
+          <legend>Goals / Reason for Consultation</legend>
+          <label for="reason">Goals / Reason for Consultation</label>
+          <textarea name="reason"></textarea>
+        </fieldset>
+        <fieldset class="terms-fields">
+          <label for="terms-checkbox" class="terms-container">
+            I accept the <span class="popover-title popover-wrapper">Terms of Use <div class="popover-content">
+                <p class="popover-message">
+                  By checking the box on the consultation form,
+                  you agree to the following Terms of Use: Communications
+                  through our website or via email are not encrypted and
+                  are not guaranteed to be secure. Use of the internet or
+                  email is for your convenience only, and by using them you
+                  assume the risk of unauthorized use. By checking this box
+                  you hereby agree to hold Cohesion Health Partners, the Vein
+                  and Vascular Institute of Central Maryland, the Surgery Center
+                  of York Road, as well as its physicians, staff, and affiliates
+                  harmless from any hacking or any other unauthorized use of your
+                  personal information by outside parties.</p>
+              </div></span>
+            <input type="checkbox" required id="terms-checkbox">
+            <span class="checkmark"></span>
+
+          </label>
+        </fieldset>
+        <button type="submit">Send Request</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <img id="cohesion-logo" src="../img/logos/cohesion-logo.png" alt="Cohesion
+        Health Partners">
+  </footer>
+  <div id="statement-modal" class="statement-container closed">
+    <div class="statement-content" id="statement-content">
+      <div class="statement-header">
+        <div>Coronavirus (COVID-19) Statement</div>
+        <button id="statement-close" class="statement-close" title="Close Statement" onclick="closeStatement()"><i
+            class="fas fa-times"></i></button>
+      </div>
+      <div class="statement-body">The Surgery Center of York Road is taking every precaution during the
+        COVID 19 pandemic. The center and staff are following all CDC guidelines
+        for disinfection and prevention of transmission. Please be advised that
+        while we can not guarantee non-exposure to COVID 19, we will continue to
+        make every effort toward prevention.</div>
+    </div>
+  </div>
+  <script type="text/javascript" src="../polyfill.js"></script>
+  <script src="https://kit.fontawesome.com/1e5f626008.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="../smoothscroll.min.js"></script>
+  <script type="text/javascript" src="../scripts.js"></script>
+</body>
+
+</html>
