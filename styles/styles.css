@@ -1602,14 +1602,37 @@ label[for="burger"] {
 }
 
 .meet-the-team-body {
+    position: relative;
     display: flex;
     flex-direction: column;
     background: linear-gradient(0deg, rgba(39, 93, 118, 1) 0%, rgba(188, 204, 212, 1) 39%, rgba(216, 226, 230, 1) 51%, rgba(237, 242, 244, 1) 65%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 100%);
+    overflow: hidden;
+}
+
+.meet-the-team-bg-triangles {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.3;
+    pointer-events: none;
+    transform: translateY(50%);
+    -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+
+    .meet-the-team-bg-triangles {
+        display: none;
+    }
 }
 
 .meet-the-team-member-container {
     display: flex;
     justify-content: space-evenly;
+    z-index: 2;
 }
 
 .meet-the-team-member {
@@ -1709,6 +1732,7 @@ label[for="burger"] {
     margin-top: 50px;
     min-height: 700px;
     position: relative;
+    z-index: 2;
 }
 
 .meet-the-team-description {
@@ -1854,6 +1878,10 @@ label[for="burger"] {
     .accolade {
         width: 100px;
         margin: 0;
+    }
+
+    .meet-the-team-container-narrow .meet-the-team-bg-triangles {
+        transform: none;
     }
 }
 
