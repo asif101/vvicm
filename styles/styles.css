@@ -1970,6 +1970,9 @@ label[for="burger"] {
         margin-left: calc((100% - 852px) / 4);
     }
 
+    .meet-the-team-container-narrow .meet-the-team-member {
+        margin-left: 0px;
+    }
 
     .meet-the-team-container-narrow .accolade-kim {
         margin-left: calc((100% - 200px) / 2);
