@@ -1698,9 +1698,7 @@ label[for="burger"] {
 }
 
 .meet-the-team-member-image-container>.lucas {
-    width: 125%;
-    margin-top: 14px;
-    margin-left: -49px;
+    width: 100%;
 }
 
 .meet-the-team-member-image-container>.tanbe {
