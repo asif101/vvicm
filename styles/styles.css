@@ -1623,8 +1623,9 @@ label[for="burger"] {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(0deg, rgba(39, 93, 118, 1) 0%, rgba(188, 204, 212, 1) 39%, rgba(216, 226, 230, 1) 51%, rgba(237, 242, 244, 1) 65%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(39, 93, 118, 0.8) 10%, rgba(177, 205, 226, 1) 55%, rgba(236, 245, 250, 1) 70%, rgba(236, 245, 250, 1) 85%, rgba(255, 255, 255, 1) 100%);
     overflow: hidden;
+    margin-top: 18px;
 }
 
 .meet-the-team-bg-triangles {
@@ -1632,9 +1633,8 @@ label[for="burger"] {
     position: absolute;
     bottom: 0;
     width: 100%;
-    opacity: 0.3;
     pointer-events: none;
-    transform: translateY(50%);
+    transform: translateY(50%) scale(1.1);
     -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0)));
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
@@ -1660,7 +1660,7 @@ label[for="burger"] {
     border-radius: 50%;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(0deg, rgba(39, 93, 118, 1) 0%, rgba(188, 204, 212, 1) 39%, rgba(216, 226, 230, 1) 51%, rgba(237, 242, 244, 1) 65%, rgba(255, 255, 255, 1) 82%, rgba(255, 255, 255, 1) 92%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(39, 93, 118, 0.8) 8%, rgba(177, 205, 226, 1) 52%, rgba(236, 245, 250, 1) 80%, rgba(236, 245, 250, 1) 85%, rgba(255, 255, 255, 1) 100%);
     border: 5px solid rgb(39, 101, 134);
     -webkit-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.4);
@@ -1737,7 +1737,7 @@ label[for="burger"] {
 
 .meet-the-team-desciption-container {
     margin-top: 50px;
-    min-height: 700px;
+    min-height: 430px;
     position: relative;
     z-index: 2;
 }
@@ -1868,8 +1868,7 @@ label[for="burger"] {
     }
 
     .meet-the-team-container-narrow .meet-the-team-body {
-        background-image: none;
-        background-color: #ecf5fa;
+        background-image: linear-gradient(0deg, rgb(221 242 250) 0%, rgb(221 242 255) 86%, rgba(255,255,255,1) 100%);
         margin-top: 20px;
     }
 
@@ -1927,7 +1926,7 @@ label[for="burger"] {
     }
 
     .meet-the-team-container-narrow .meet-the-team-bg-triangles {
-        transform: none;
+        transform: translateY(44%) scale(1.1);
     }
 }
 
