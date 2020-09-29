@@ -1868,7 +1868,7 @@ label[for="burger"] {
     }
 
     .meet-the-team-container-narrow .meet-the-team-body {
-        background-image: linear-gradient(0deg, rgb(221 242 250) 0%, rgb(221 242 255) 86%, rgba(255,255,255,1) 100%);
+        background-image: linear-gradient(0deg, rgb(208 236 253) 0%, rgb(208 236 253) 86%, rgb(255, 255, 255) 100%);
         margin-top: 20px;
     }
 
