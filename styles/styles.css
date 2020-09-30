@@ -364,6 +364,13 @@ section#hours-and-location a:hover {
     color: rgb(255, 253, 84);
 }
 
+.contact-form-title {
+    color: white;
+    padding-left: 0.55em;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+}
+
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form input[type="tel"],
