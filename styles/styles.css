@@ -1646,6 +1646,11 @@ label[for="burger"] {
     mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
+
+.meet-the-team-bg-triangles-ie11-fallback {
+    display: none;
+}
+
 .meet-the-team-member-container {
     display: flex;
     justify-content: space-evenly;
@@ -1968,6 +1973,16 @@ label[for="burger"] {
 
     .meet-the-team-bg-triangles {
         display: none;
+    }
+
+    .meet-the-team-bg-triangles-ie11-fallback {
+        display: block;
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        pointer-events: none;
+        transform: translateY(50%) scale(1.1);
     }
 
     .meet-the-team-member {
