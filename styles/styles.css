@@ -195,31 +195,18 @@ section#introduction article {
 
 /* Surgery Center Section */
 section#surgery-center .feature-link {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     font-size: 1rem;
     line-height: 1.8;
     text-decoration: none;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
 }
 
 section#surgery-center .feature-link>* {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 0 50%;
-    flex: 1 0 50%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    width: 50%;
     align-items: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     padding: 2em 3em;
-    min-width: 400px;
 }
 
 .feature-link .feature-description {
@@ -788,8 +775,13 @@ label[for="burger"] {
 }
 
 @media only screen and (max-width: 800px) {
-    section#surgery-center .center-link>* {
-        flex-basis: 100%;
+
+    section#surgery-center .feature-link {
+        flex-direction: column;
+    }
+
+    section#surgery-center .feature-link>* {
+        width: 100%;
     }
 
     .feature-button {
