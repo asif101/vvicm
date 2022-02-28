@@ -1695,7 +1695,7 @@ label[for="burger"] {
 }
 
 
-.meet-the-team-member-image-container>.kim {
+.meet-the-team-member-image-container>.noori {
     width: 100%;
 }
 
@@ -1704,7 +1704,7 @@ label[for="burger"] {
 }
 
 .meet-the-team-member-image-container>.tanbe {
-    width: 119%;
+    width: 100%;
 }
 
 .meet-the-team-member-name {
@@ -1776,8 +1776,8 @@ label[for="burger"] {
     opacity: 1;
 }
 
-.meet-the-team-description[data-teammember='Dr. KR Kurtis Kim, M.D.'] {
-    left: calc((100% - 852px) / 4);
+.meet-the-team-description[data-teammember='Vincent Noori, M.D., RPVI'] {
+    left: calc((100% - 650px) / 4);
 }
 
 .meet-the-team-description[data-teammember='Dr. Paul Lucas, M.D.'] {
@@ -1794,11 +1794,6 @@ label[for="burger"] {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-}
-
-.accolade-kim {
-    width: 200px;
-    margin: 10px 20px 22px 36px;
 }
 
 .accolade-cww {
@@ -1827,7 +1822,7 @@ label[for="burger"] {
 
 @media only screen and (max-width: 1250px) {
 
-    .meet-the-team-description[data-teammember='Dr. KR Kurtis Kim, M.D.'] {
+    .meet-the-team-description[data-teammember='Vincent Noori, M.D., RPVI'] {
         width: 90%;
         left: 50%;
         transform: translateX(-50%);
@@ -1906,10 +1901,6 @@ label[for="burger"] {
         align-items: center;
     }
 
-    .accolade-kim {
-        margin: 0;
-    }
-
     .accolade-cww {
         margin: 0;
     }
@@ -1981,10 +1972,6 @@ label[for="burger"] {
 
     .meet-the-team-container-narrow .meet-the-team-member {
         margin-left: 0px;
-    }
-
-    .meet-the-team-container-narrow .accolade-kim {
-        margin-left: calc((100% - 200px) / 2);
     }
 
     .meet-the-team-container-narrow .accolade-cww {
